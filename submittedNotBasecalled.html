@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Job submitted (not basecaled data)</title>
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
+  </head>
+  <body>
+    <p></p>
+    <div class="container">
+      <div class="alert alert-success" role="alert">
+          &radic; Your job has been submitted successfully. Click <a href="index.html">here</a> back.
+      </div>
+      <table class="table">
+        <tr>
+          <th>workspace</th>
+          <td id="workspace"></td>
+        </tr>
+        <tr>
+          <th>barcodes</th>
+          <td id="barcodes"></td>
+        </tr>
+        <tr>
+          <th>threads</th>
+          <td id="threads"></td>
+        </tr>
+        <tr>
+          <th>Flowcell ID</th>
+          <td id="flowcellid"></td>
+        </tr>
+        <tr>
+          <th>Kit Number</th>
+          <td id="kitnumber"></td>
+        </tr>
+        <tr>
+          <th>read score</th>
+          <td id="readscore"></td>
+        </tr>
+        <tr>
+          <th>read length</th>
+          <td id="readlength"></td>
+        </tr>
+        <tr>
+          <th>head crop</th>
+          <td id="headcrop"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script language="JavaScript">
+    function show() {
+      let parameters = location.search.substring(1).split('&');
+      let temp = parameters[1].split('=');
+      document.getElementById('workspace').innerHTML = unescape(temp[1]);
+      temp = parameters[2].split('=');
+      document.getElementById('barcodes').innerHTML = unescape(temp[1])===''?'(All)':unescape(temp[1]);
+      temp = parameters[3].split('=');
+      document.getElementById('threads').innerHTML = unescape(temp[1]);
+      temp = parameters[4].split('=');
+      document.getElementById('flowcellid').innerHTML = unescape(temp[1]);
+      temp = parameters[5].split('=');
+      document.getElementById('kitnumber').innerHTML = unescape(temp[1]);
+      temp = parameters[6].split('=');
+      document.getElementById('readscore').innerHTML = unescape(temp[1]);
+      temp = parameters[7].split('=');
+      document.getElementById('readlength').innerHTML = unescape(temp[1]);
+      temp = parameters[8].split('=');
+      document.getElementById('headcrop').innerHTML = unescape(temp[1]);
+    }
+    show();
+  </script>    
+</html>

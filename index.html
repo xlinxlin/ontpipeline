@@ -2,14 +2,205 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
+    <title>Nanopore</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <p></p>
+    <p></p>
+    <div class="container">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="basecalled-tab" data-toggle="tab" href="#basecalled" role="tab" aria-controls="Basecalled" aria-selected="true">Basecalled</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="not-basecalled-tab" data-toggle="tab" href="#not-basecalled" role="tab" aria-controls="Not Basecalled" aria-selected="false">Not Basecalled</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="check-job-status-tab" data-toggle="tab" href="#checkjobs" role="tab" aria-controls="check job status" aria-selected="false">Check Job Status</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <p></p>
+        <div class="tab-pane show active" id="basecalled" role="tabpanel" aria-labelledby="basecalled-tab">
+          <form id="submitform" action="submitted.html" method="GET">
+            <div class="card">
+              <div class="card-header">
+                1. General Settings
+              </div>
+              <p></p>
+              <div class="form-group row">
+                <label for="jobname" class="col-sm-2 col-form-label">Job name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="jobname" name="jobname">
+                  <small id="jobnameHelp" class="form-text text-muted">set the name of the job, up to 15 characters, no blank spaces, start with alphanumeric character (recommended)</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="select workspace" class="col-sm-2 col-form-label">Workspace</label>
+                <div class="col-sm-10">
+                  <div class="input-group">
+                    <input id="selected-file" name="selected-file" class="col-sm-8" value="" required/></input>
+                    <button id="select-file" name="select-file" class="btn btn-primary">Browser</button>
+                  </div>
+                  <small id="workspaceHelp" class="form-text text-muted">select path/to/your/workspace/ (required)</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="barcodes" class="col-sm-2 col-form-label">Barcodes</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="barcodes" name="barcodes">
+                  <small id="barcodessHelp" class="form-text text-muted">set whitch barcodes you want to analysis, e.g.: 1,2,3,4</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="threads" class="col-sm-2 col-form-label">Threads</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="threads" name="threads" min="1" step="1" value="" required>
+                  <small id="threadsHelp" class="form-text text-muted">set how many threads do you need (required), default: 4</small>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                2. Reads Filter Settings
+              </div>
+              <p></p>
+              <div class="form-group row">
+                <label for="readscore" class="col-sm-2 col-form-label">Read score</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="read-score" name="read-score" min="1" step="0.1" value="10" required>
+                  <small id="readscoreHelp" class="form-text text-muted">set a minimum average read quality score for filter (required), default: 10</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="readlength" class="col-sm-2 col-form-label">Read length</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="read-length" name="read-length" min="0" step="1" value="500" required>
+                  <small id="readlengthHelp" class="form-text text-muted">set a minimum read length for filter (required), default: 500</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="headcrop" class="col-sm-2 col-form-label">Head crop</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="headcrop" name="headcrop" min="0" step="1" value="50" required>
+                  <small id="headcropHelp" class="form-text text-muted">trim n nucleotides from start of read (required), default: 50</small>
+                </div>
+              </div>
+              <!--<button id="startpipeline" class="btn btn-primary">Submit</button>-->
+              <input type="submit" id="startpipeline" class="btn btn-primary" value="submit">
+            </div>
+          </form>
+        </div>
+
+        <p></p>
+        <div class="tab-pane fade" id="not-basecalled" role="tabpanel" aria-labelledby="not-basecalled-tab">
+          <form id="submitform" action="submittedNotBasecalled.html" method="GET">
+            <div class="card">
+              <div class="card-header">
+                1. General Settings
+              </div>
+              <p></p>
+              <div class="form-group row">
+                <label for="nb-jobname" class="col-sm-2 col-form-label">Job name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="nb-jobname" name="nb-jobname">
+                  <small id="nb-jobnameHelp" class="form-text text-muted">set the name of the job, up to 15 characters, no blank spaces, start with alphanumeric character (recommended)</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="select workspace" class="col-sm-2 col-form-label">Workspace</label>
+                <div class="col-sm-10">
+                  <div class="input-group">
+                    <input id="nb-selected-file" class="col-sm-8" value="" required/></input>
+                    <button id="nb-select-file" class="btn btn-primary">Browser</button>
+                  </div>
+                  <small id="workspaceHelp" class="form-text text-muted">select path/to/your/fast5/directory (required)</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="barcodes" class="col-sm-2 col-form-label">Barcodes</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="nb-barcodes" name="nb-barcodes">
+                  <small id="barcodessHelp" class="form-text text-muted">set whitch barcodes you want to analysis, e.g.: 1,2,3,4</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="threads" class="col-sm-2 col-form-label">Threads</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="nb-threads" min="1" step="1" value="" required>
+                  <small id="threadsHelp" class="form-text text-muted">set how many threads do you need (required), default: 4</small>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                2. Basecalling Settings
+              </div>
+              <p></p>
+              <div class="form-group row">
+                <label for="flowcellid" class="col-sm-2 col-form-label">Flowcell ID</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="flowcell-id" value="FLO-MIN106" required>
+                  <small id="flowcellHelp" class="form-text text-muted">set flowcell id (required), default: FLO-MIN106</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="kitnumber" class="col-sm-2 col-form-label">Kit Number</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="kit-number" value="SQK-LSK109" required>
+                  <small id="kitHelp" class="form-text text-muted">set kit number (required), default: SQK-LSK109</small>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                3. Reads Filter Settings
+              </div>
+              <p></p>
+              <div class="form-group row">
+                <label for="readscore" class="col-sm-2 col-form-label">Read score</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="nb-read-score" min="1" step="0.1" value="10" required>
+                  <small id="readscoreHelp" class="form-text text-muted">set a minimum average read quality score for filter (required), default: 10</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="readlength" class="col-sm-2 col-form-label">Read length</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="nb-read-length" min="0" step="1" value="500" required>
+                  <small id="readlengthHelp" class="form-text text-muted">set a minimum read length for filter (required), default: 500</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="headcrop" class="col-sm-2 col-form-label">Head crop</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="nb-headcrop" min="0" step="1" value="50" required>
+                  <small id="headcropHelp" class="form-text text-muted">trim n nucleotides from start of read (required), default: 50</small>
+                </div>
+              </div>
+              <button id="nb-startpipeline" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <p></p>
+        <div class="tab-pane fade" id="checkjobs" role="tabpanel" aria-labelledby="check-job-status-tab">
+          <div>
+            <textarea class="form-control" rows="20" id="jobstatus" disabled></textarea>
+          </div>
+          <div>
+            <button id="checkjobstatus" name="checkjobstatus" class="form-control btn btn-primary">check</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <script>
       // You can also require other files to run in this process

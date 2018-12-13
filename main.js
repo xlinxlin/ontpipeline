@@ -1,16 +1,74 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
-
+let exec = require("child_process").exec;
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
-function createWindow () {
+//listen to an open-file-dialog command and sending back selected information
+const ipc = require('electron').ipcMain
+const dialog = require('electron').dialog
+
+ipc.on('get-threads-number', function(event){
+  exec('cat /proc/cpuinfo | grep processor | wc -l', function (err, stdout, stderr) {
+    if (err) handleError();
+    console.log(stdout);
+    console.log(stderr);
+    event.sender.send('return-threads-number',stdout);
+  });
+})
+
+ipc.on('open-file-dialog', function (event) {
+  dialog.showOpenDialog({
+    properties: ['openDirectory']
+  }, function (files) {
+    if (files) event.sender.send('selected-file', files)
+  })
+})
+
+ipc.on('nb-open-file-dialog', function (event) {
+  dialog.showOpenDialog({
+    properties: ['openDirectory']
+  }, function (files) {
+    if (files) event.sender.send('nb-selected-file', files)
+  })
+})
+
+ipc.on('checkjobstatus', function (event) {
+  exec('qstat', function (err, stdout, stderr) {
+    if (err) handleError();
+    console.log(stdout);
+    console.log(stderr);
+    event.sender.send('jobstatus',stdout===''?'No jobs have been found or all jobs have been finished.':stdout);
+    //Simple response to user whenever localhost:8888 is accessed
+    //response.write(stdout);
+    //response.end();
+  });
+  //console.log("123");
+})
+
+//ipc.on('submitForm', function(event, data) {
+   // Access form data here
+//});
+
+
+function createWindow (event) {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({width: 800, height: 800})
+  
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
+  
+  /*
+  exec('cat /proc/cpuinfo | grep processor | wc -l', function (err, stdout, stderr) {
+    if (err) handleError();
+    console.log(stdout);
+    console.log(stderr);
+    event.sender.send('getthreads',stdout);
+    
+  });
+  */
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
@@ -28,6 +86,17 @@ function createWindow () {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', createWindow)
+
+/*
+app.on('ready', function(event){
+  exec('cat /proc/cpuinfo | grep processor | wc -l', function (err, stdout, stderr) {
+    if (err) handleError();
+    console.log(stdout);
+    console.log(stderr);
+    event.sender.send('getthreads',stdout);
+  });
+})
+*/
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {

@@ -1,18 +1,17 @@
 {
-  "name": "electron-quick-start",
+  "name": "ontpipeline",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "pipeline for ont",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/xlinxlin/ontpipeline",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "nanopore",
+    "pipeline",
+    "demo",
+    "ONT"
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
