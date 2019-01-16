@@ -1,0 +1,18 @@
+Mon Dec 17 09:17:56 CET 2018 Analysis starts.
+Mon Dec 17 09:17:56 CET 2018 Your workdir is /home/ynzhou/NCCTData/20181203_0923_03_12_18_BaBasfirst/basecalled_fastq/workspace.
+Mon Dec 17 09:17:56 CET 2018 Adapter trimming starts with Porechop.
+Mon Dec 17 09:17:56 CET 2018 Adapter trimming starts with barcode01/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:18:08 CET 2018 Adapter trimming ends with barcode01/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:18:08 CET 2018 Adapter trimming starts with barcode02/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:18:38 CET 2018 Adapter trimming ends with barcode02/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:18:38 CET 2018 Adapter trimming starts with barcode03/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:18:57 CET 2018 Adapter trimming ends with barcode03/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:18:57 CET 2018 Adapter trimming starts with barcode04/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:19:06 CET 2018 Adapter trimming ends with barcode04/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:19:06 CET 2018 Adapter trimming starts with barcode05/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:19:18 CET 2018 Adapter trimming ends with barcode05/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:19:18 CET 2018 Adapter trimming starts with barcode06/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:19:28 CET 2018 Adapter trimming ends with barcode06/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:19:28 CET 2018 Adapter trimming starts with barcode07/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:23:35 CET 2018 Adapter trimming ends with barcode07/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.
+Mon Dec 17 09:23:35 CET 2018 Adapter trimming starts with barcode08/fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq.

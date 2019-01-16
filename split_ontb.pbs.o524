@@ -1,0 +1,75 @@
+Mon Dec 17 16:20:37 CET 2018 Analysis starts.
+Mon Dec 17 16:20:37 CET 2018 Your workdir is /home/ynzhou/NCCTData/VIM4_fast5_test/basecalled_fastq/workspace.
+Mon Dec 17 16:20:37 CET 2018 Adapter trimming starts with Porechop.
+Mon Dec 17 16:20:37 CET 2018 Adapter trimming starts with barcode{03}/*.fastq.
+Error: could not find barcode{03}/*.fastq
+Mon Dec 17 16:20:38 CET 2018 Adapter trimming ends with barcode{03}/*.fastq.
+Mon Dec 17 16:20:38 CET 2018 Adapter trimming ends.
+Mon Dec 17 16:20:38 CET 2018 Reads filte with NanoStat and NanoFilt starts.
+Mon Dec 17 16:20:38 CET 2018 Reads check before filter starts with adaptertrimmed_barcode01_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:39 CET 2018 Reads check before filter ends with adaptertrimmed_barcode01_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:39 CET 2018 Reads filter starts with adaptertrimmed_barcode01_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+10Mon Dec 17 16:20:40 CET 2018 Reads filter ends with adaptertrimmed_barcode01_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:40 CET 2018 Reads check before filter starts with adaptertrimmed_barcode02_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:41 CET 2018 Reads check before filter ends with adaptertrimmed_barcode02_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:41 CET 2018 Reads filter starts with adaptertrimmed_barcode02_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+10Mon Dec 17 16:20:43 CET 2018 Reads filter ends with adaptertrimmed_barcode02_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:43 CET 2018 Reads check before filter starts with adaptertrimmed_barcode03_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:43 CET 2018 Reads check before filter ends with adaptertrimmed_barcode03_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:43 CET 2018 Reads filter starts with adaptertrimmed_barcode03_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+10Mon Dec 17 16:20:44 CET 2018 Reads filter ends with adaptertrimmed_barcode03_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:44 CET 2018 Reads check before filter starts with adaptertrimmed_barcode04_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:45 CET 2018 Reads check before filter ends with adaptertrimmed_barcode04_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:45 CET 2018 Reads filter starts with adaptertrimmed_barcode04_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+10Mon Dec 17 16:20:46 CET 2018 Reads filter ends with adaptertrimmed_barcode04_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:46 CET 2018 Reads check before filter starts with adaptertrimmed_barcode05_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:47 CET 2018 Reads check before filter ends with adaptertrimmed_barcode05_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:47 CET 2018 Reads filter starts with adaptertrimmed_barcode05_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+10Mon Dec 17 16:20:48 CET 2018 Reads filter ends with adaptertrimmed_barcode05_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:48 CET 2018 Reads check before filter starts with adaptertrimmed_barcode06_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:49 CET 2018 Reads check before filter ends with adaptertrimmed_barcode06_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:49 CET 2018 Reads filter starts with adaptertrimmed_barcode06_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+10Mon Dec 17 16:20:50 CET 2018 Reads filter ends with adaptertrimmed_barcode06_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:50 CET 2018 Reads check before filter starts with adaptertrimmed_barcode07_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:51 CET 2018 Reads check before filter ends with adaptertrimmed_barcode07_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:51 CET 2018 Reads filter starts with adaptertrimmed_barcode07_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+10Mon Dec 17 16:20:51 CET 2018 Reads filter ends with adaptertrimmed_barcode07_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:51 CET 2018 Reads check before filter starts with adaptertrimmed_barcode09_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:52 CET 2018 Reads check before filter ends with adaptertrimmed_barcode09_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:52 CET 2018 Reads filter starts with adaptertrimmed_barcode09_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+10Mon Dec 17 16:20:52 CET 2018 Reads filter ends with adaptertrimmed_barcode09_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:52 CET 2018 Reads check before filter starts with adaptertrimmed_barcode11_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:53 CET 2018 Reads check before filter ends with adaptertrimmed_barcode11_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:53 CET 2018 Reads filter starts with adaptertrimmed_barcode11_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+10Mon Dec 17 16:20:53 CET 2018 Reads filter ends with adaptertrimmed_barcode11_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:53 CET 2018 Reads check before filter starts with adaptertrimmed_barcode12_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:54 CET 2018 Reads check before filter ends with adaptertrimmed_barcode12_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:54 CET 2018 Reads filter starts with adaptertrimmed_barcode12_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+10Mon Dec 17 16:20:54 CET 2018 Reads filter ends with adaptertrimmed_barcode12_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:54 CET 2018 Reads check before filter starts with adaptertrimmed_unclassified_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:55 CET 2018 Reads check before filter ends with adaptertrimmed_unclassified_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:55 CET 2018 Reads filter starts with adaptertrimmed_unclassified_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+10Mon Dec 17 16:20:56 CET 2018 Reads filter ends with adaptertrimmed_unclassified_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:56 CET 2018 Reads filter ends.
+Mon Dec 17 16:20:56 CET 2018 Reads check after filter with NanoStat starts.
+Mon Dec 17 16:20:56 CET 2018 Reads check after filter starts with filted_adaptertrimmed_barcode01_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:56 CET 2018 Reads check after filter ends with filted_adaptertrimmed_barcode01_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:56 CET 2018 Reads check after filter starts with filted_adaptertrimmed_barcode02_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:57 CET 2018 Reads check after filter ends with filted_adaptertrimmed_barcode02_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:57 CET 2018 Reads check after filter starts with filted_adaptertrimmed_barcode03_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:58 CET 2018 Reads check after filter ends with filted_adaptertrimmed_barcode03_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:58 CET 2018 Reads check after filter starts with filted_adaptertrimmed_barcode04_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:59 CET 2018 Reads check after filter ends with filted_adaptertrimmed_barcode04_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:59 CET 2018 Reads check after filter starts with filted_adaptertrimmed_barcode05_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:59 CET 2018 Reads check after filter ends with filted_adaptertrimmed_barcode05_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:20:59 CET 2018 Reads check after filter starts with filted_adaptertrimmed_barcode06_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:21:00 CET 2018 Reads check after filter ends with filted_adaptertrimmed_barcode06_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:21:00 CET 2018 Reads check after filter starts with filted_adaptertrimmed_barcode07_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:21:01 CET 2018 Reads check after filter ends with filted_adaptertrimmed_barcode07_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:21:01 CET 2018 Reads check after filter starts with filted_adaptertrimmed_barcode12_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:21:01 CET 2018 Reads check after filter ends with filted_adaptertrimmed_barcode12_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:21:01 CET 2018 Reads check after filter starts with filted_adaptertrimmed_unclassified_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:21:02 CET 2018 Reads check after filter ends with filted_adaptertrimmed_unclassified_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq.
+Mon Dec 17 16:21:02 CET 2018 Reads check after filter ends.
+Mon Dec 17 16:21:02 CET 2018 Generate the summury files.
+Mon Dec 17 16:21:05 CET 2018 Done.

@@ -24,10 +24,13 @@
         <li class="nav-item">
           <a class="nav-link" id="check-job-status-tab" data-toggle="tab" href="#checkjobs" role="tab" aria-controls="check job status" aria-selected="false">Check Job Status</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" id="check-stats-tab" data-toggle="tab" href="#checkstats" role="tab" aria-controls="check stats" aria-selected="false">(not used)</a>
+        </li>
       </ul>
       <div class="tab-content" id="myTabContent">
         <p></p>
-        <div class="tab-pane show active" id="basecalled" role="tabpanel" aria-labelledby="basecalled-tab">
+        <div class="tab-pane fade show active" id="basecalled" role="tabpanel" aria-labelledby="basecalled-tab">
           <form id="submitform" action="submitted.html" method="GET">
             <div class="card">
               <div class="card-header">
@@ -46,7 +49,7 @@
                 <div class="col-sm-10">
                   <div class="input-group">
                     <input id="selected-file" name="selected-file" class="col-sm-8" value="" required/></input>
-                    <button id="select-file" name="select-file" class="btn btn-primary">Browser</button>
+                    <button id="select-file" name="select-file" class="btn btn-primary">Browse</button>
                   </div>
                   <small id="workspaceHelp" class="form-text text-muted">select path/to/your/workspace/ (required)</small>
                 </div>
@@ -118,7 +121,7 @@
                 <div class="col-sm-10">
                   <div class="input-group">
                     <input id="nb-selected-file" class="col-sm-8" value="" required/></input>
-                    <button id="nb-select-file" class="btn btn-primary">Browser</button>
+                    <button id="nb-select-file" class="btn btn-primary">Browse</button>
                   </div>
                   <small id="workspaceHelp" class="form-text text-muted">select path/to/your/fast5/directory (required)</small>
                 </div>
@@ -184,7 +187,8 @@
                   <small id="headcropHelp" class="form-text text-muted">trim n nucleotides from start of read (required), default: 50</small>
                 </div>
               </div>
-              <button id="nb-startpipeline" class="btn btn-primary">Submit</button>
+              <!--<button id="nb-startpipeline" class="btn btn-primary">Submit</button>-->
+              <input type="submit" id="nb-startpipeline" class="btn btn-primary" value="submit">
             </div>
           </form>
         </div>
@@ -196,6 +200,21 @@
           </div>
           <div>
             <button id="checkjobstatus" name="checkjobstatus" class="form-control btn btn-primary">check</button>
+          </div>
+        </div>
+
+        <p></p>
+        <div class="tab-pane fade" id="checkstats" role="tabpanel" aria-labelledby="check-stats-tab">
+          test
+          <div class="form-group row">
+            <label for="select workspace" class="col-sm-2 col-form-label">Workspace</label>
+            <div class="col-sm-10">
+              <div class="input-group">
+                <input id="stat-file-path" name="stat-file-path" class="col-sm-8" value="" required/></input>
+                <button id="select-stat-file" name="select-stat-file" class="btn btn-primary">Browse</button>
+              </div>
+              <small id="statfileHelp" class="form-text text-muted">select path/to/your/workspace/Analysis/StatFiles (required)</small>
+            </div>
           </div>
         </div>
 
