@@ -12,6 +12,8 @@ const nbSelectDirBtn = document.getElementById('nb-select-file')
 const nbSubmitBtn = document.getElementById('nb-startpipeline')
 const checkjobstatusBtn = document.getElementById('checkjobstatus')
 const selectStatFileBtn = document.getElementById('select-stat-file')
+//const checkAlbacore = document.getElementById('basecaller_albacore')
+//const checkGuppy = document.getElementById('basecaller_guppy')
 
 document.addEventListener('DOMContentLoaded', function(event){
   ipc.send('get-threads-number')
@@ -73,7 +75,13 @@ nbSubmitBtn.addEventListener('click', function (event) {
   let jobname = document.getElementById('nb-jobname').value === ''?'':'-N '+document.getElementById('nb-jobname').value;
   let execstr = '';
   if(barcodes===''){
-    execstr = 'qsub '+jobname+' -l ncpus='+ppn+' -v FLOWCELL_ID='+flowcellid+',KIT_NUMBER='+kitnumber+',SCORE='+score+',LENGTH='+length+',HEADCROP='+headcrop+',WORKSPACE_PATH='+workspace+' ~/pbsScripts/ontnb.pbs';
+    if(document.getElementById('basecaller_albacore').checked){
+      execstr = 'qsub '+jobname+' -l ncpus='+ppn+' -v FLOWCELL_ID='+flowcellid+',KIT_NUMBER='+kitnumber+',SCORE='+score+',LENGTH='+length+',HEADCROP='+headcrop+',WORKSPACE_PATH='+workspace+' ~/pbsScripts/ontnb.pbs';
+    } else if (document.getElementById('basecaller_guppy').checked) {
+      alert('guppy');
+    } else {
+      alert('nothing');
+    }
   } else {
     barcodes = barcodes.split(',');
     for(let i=0;i<barcodes.length;i++){

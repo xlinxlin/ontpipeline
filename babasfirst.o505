@@ -1,4 +1,0 @@
-Mon Dec 17 12:25:46 CET 2018 Analysis starts.
-Mon Dec 17 12:25:46 CET 2018 Your workdir is /home/ynzhou/NCCTData/20181203_0923_03_12_18_BaBasfirst/basecalled_fastq/workspace.
-/var/spool/torque/mom_priv/jobs/505.localhost.SC: line 17: syntax error near unexpected token `wc'
-/var/spool/torque/mom_priv/jobs/505.localhost.SC: line 17: `  if [ (wc -c filename  | awk '{print $1}') > 1000000000 ]; then'

@@ -1,4 +1,4 @@
-/var/spool/torque/mom_priv/jobs/527.localhost.SC: line 57: cd: /home/ynzhou/NCCTData/VIM4_fast5_test/0/workspace/Analysis/AdapterTrimmedFiles: No such file or directory
+/var/spool/torque/mom_priv/jobs/532.localhost.SC: line 57: cd: /home/ynzhou/NCCTData/VIM4_fast5_test/0/workspace/Analysis/AdapterTrimmedFiles: No such file or directory
 Traceback (most recent call last):
   File "/usr/local/bin/NanoStat", line 7, in <module>
     from nanostat.NanoStat import main
@@ -241,7 +241,7 @@ Traceback (most recent call last):
     import concurrent.futures as cfutures
 ImportError: No module named concurrent.futures
 mv: cannot stat 'log_filted_unclassified.log': No such file or directory
-/var/spool/torque/mom_priv/jobs/527.localhost.SC: line 72: cd: /home/ynzhou/NCCTData/VIM4_fast5_test/0/workspace/Analysis/FiltedFiles: No such file or directory
+/var/spool/torque/mom_priv/jobs/532.localhost.SC: line 72: cd: /home/ynzhou/NCCTData/VIM4_fast5_test/0/workspace/Analysis/FiltedFiles: No such file or directory
 Traceback (most recent call last):
   File "/usr/local/bin/NanoStat", line 7, in <module>
     from nanostat.NanoStat import main
@@ -352,7 +352,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python2.7/dist-packages/nanoget/nanoget.py", line 28, in <module>
     import concurrent.futures as cfutures
 ImportError: No module named concurrent.futures
-/var/spool/torque/mom_priv/jobs/527.localhost.SC: line 80: cd: /home/ynzhou/NCCTData/VIM4_fast5_test/0/workspace/Analysis/AdapterTrimmedFiles: No such file or directory
-/var/spool/torque/mom_priv/jobs/527.localhost.SC: line 82: /home/ynzhou/NCCTData/VIM4_fast5_test/0/Analysis/StatFiles/summary_stat_after_adaptertrimming.txt: No such file or directory
-/var/spool/torque/mom_priv/jobs/527.localhost.SC: line 83: cd: /home/ynzhou/NCCTData/VIM4_fast5_test/0/workspace/Analysis/FiltedFiles: No such file or directory
-/var/spool/torque/mom_priv/jobs/527.localhost.SC: line 84: /home/ynzhou/NCCTData/VIM4_fast5_test/0/Analysis/StatFiles/summary_stat_after_filter.txt: No such file or directory
+/var/spool/torque/mom_priv/jobs/532.localhost.SC: line 80: cd: /home/ynzhou/NCCTData/VIM4_fast5_test/0/workspace/Analysis/AdapterTrimmedFiles: No such file or directory
+/var/spool/torque/mom_priv/jobs/532.localhost.SC: line 82: /home/ynzhou/NCCTData/VIM4_fast5_test/0/Analysis/StatFiles/summary_stat_after_adaptertrimming.txt: No such file or directory
+/var/spool/torque/mom_priv/jobs/532.localhost.SC: line 83: cd: /home/ynzhou/NCCTData/VIM4_fast5_test/0/workspace/Analysis/FiltedFiles: No such file or directory
+/var/spool/torque/mom_priv/jobs/532.localhost.SC: line 84: /home/ynzhou/NCCTData/VIM4_fast5_test/0/Analysis/StatFiles/summary_stat_after_filter.txt: No such file or directory

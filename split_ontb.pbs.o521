@@ -1,6 +1,0 @@
-Mon Dec 17 15:46:06 CET 2018 Analysis starts.
-Mon Dec 17 15:46:06 CET 2018 Your workdir is 7.
-/var/spool/torque/mom_priv/jobs/521.localhost.SC: line 10: cd: 7: No such file or directory
-/var/spool/torque/mom_priv/jobs/521.localhost.SC: line 12: cd: pass/: No such file or directory
-Mon Dec 17 15:46:49 CET 2018 Adapter trimming starts with Porechop.
-Mon Dec 17 15:46:49 CET 2018 Adapter trimming starts with splitTest/splitTest_fastq_runid_78b77bbcaec589335783efc74834f22c22551d3b.fastq_00.fastq.

@@ -1,0 +1,77 @@
+Wed Jan 30 14:49:04 CET 2019 Analysis starts.
+Wed Jan 30 14:49:04 CET 2019 Your workdir is /home/ynzhou/NCCTData/VIM4_fast5_test/0.
+Wed Jan 30 14:49:04 CET 2019 Basecall starts.
+Wed Jan 30 15:03:45 CET 2019 Basecall ends.
+Wed Jan 30 15:03:45 CET 2019 Adapter trimming starts with Porechop.
+Wed Jan 30 15:03:45 CET 2019 Adapter trimming starts with barcode01/barcode01_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:03:54 CET 2019 Adapter trimming ends with barcode01/barcode01_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:03:54 CET 2019 Adapter trimming starts with barcode02/barcode02_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:05 CET 2019 Adapter trimming ends with barcode02/barcode02_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:05 CET 2019 Adapter trimming starts with barcode03/barcode03_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:11 CET 2019 Adapter trimming ends with barcode03/barcode03_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:11 CET 2019 Adapter trimming starts with barcode04/barcode04_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:20 CET 2019 Adapter trimming ends with barcode04/barcode04_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:20 CET 2019 Adapter trimming starts with barcode05/barcode05_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:30 CET 2019 Adapter trimming ends with barcode05/barcode05_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:30 CET 2019 Adapter trimming starts with barcode06/barcode06_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:39 CET 2019 Adapter trimming ends with barcode06/barcode06_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:39 CET 2019 Adapter trimming starts with barcode07/barcode07_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:39 CET 2019 Adapter trimming ends with barcode07/barcode07_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:39 CET 2019 Adapter trimming starts with barcode09/barcode09_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:40 CET 2019 Adapter trimming ends with barcode09/barcode09_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:40 CET 2019 Adapter trimming starts with barcode11/barcode11_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:40 CET 2019 Adapter trimming ends with barcode11/barcode11_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:40 CET 2019 Adapter trimming starts with barcode12/barcode12_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:41 CET 2019 Adapter trimming ends with barcode12/barcode12_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:41 CET 2019 Adapter trimming starts with unclassified/unclassified_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:46 CET 2019 Adapter trimming ends with unclassified/unclassified_fastq_runid_be80c419a6c7058ddedfbb6000cd6d1afdd70a8f.fastq_.fastq.
+Wed Jan 30 15:04:46 CET 2019 Reads filte with NanoStat and NanoFilt starts.
+Wed Jan 30 15:04:46 CET 2019 Reads check before filter starts with barcode01.
+Wed Jan 30 15:04:46 CET 2019 Reads check before filter ends with barcode01.
+Wed Jan 30 15:04:46 CET 2019 Reads filter starts with barcode01.
+Wed Jan 30 15:04:46 CET 2019 Reads filter ends with barcode01.
+Wed Jan 30 15:04:46 CET 2019 Reads check before filter starts with barcode02.
+Wed Jan 30 15:04:47 CET 2019 Reads check before filter ends with barcode02.
+Wed Jan 30 15:04:47 CET 2019 Reads filter starts with barcode02.
+Wed Jan 30 15:04:47 CET 2019 Reads filter ends with barcode02.
+Wed Jan 30 15:04:47 CET 2019 Reads check before filter starts with barcode03.
+Wed Jan 30 15:04:47 CET 2019 Reads check before filter ends with barcode03.
+Wed Jan 30 15:04:47 CET 2019 Reads filter starts with barcode03.
+Wed Jan 30 15:04:48 CET 2019 Reads filter ends with barcode03.
+Wed Jan 30 15:04:48 CET 2019 Reads check before filter starts with barcode04.
+Wed Jan 30 15:04:48 CET 2019 Reads check before filter ends with barcode04.
+Wed Jan 30 15:04:48 CET 2019 Reads filter starts with barcode04.
+Wed Jan 30 15:04:48 CET 2019 Reads filter ends with barcode04.
+Wed Jan 30 15:04:48 CET 2019 Reads check before filter starts with barcode05.
+Wed Jan 30 15:04:49 CET 2019 Reads check before filter ends with barcode05.
+Wed Jan 30 15:04:49 CET 2019 Reads filter starts with barcode05.
+Wed Jan 30 15:04:49 CET 2019 Reads filter ends with barcode05.
+Wed Jan 30 15:04:49 CET 2019 Reads check before filter starts with barcode06.
+Wed Jan 30 15:04:49 CET 2019 Reads check before filter ends with barcode06.
+Wed Jan 30 15:04:49 CET 2019 Reads filter starts with barcode06.
+Wed Jan 30 15:04:50 CET 2019 Reads filter ends with barcode06.
+Wed Jan 30 15:04:50 CET 2019 Reads check before filter starts with barcode07.
+Wed Jan 30 15:04:50 CET 2019 Reads check before filter ends with barcode07.
+Wed Jan 30 15:04:50 CET 2019 Reads filter starts with barcode07.
+Wed Jan 30 15:04:50 CET 2019 Reads filter ends with barcode07.
+Wed Jan 30 15:04:50 CET 2019 Reads check before filter starts with barcode09.
+Wed Jan 30 15:04:51 CET 2019 Reads check before filter ends with barcode09.
+Wed Jan 30 15:04:51 CET 2019 Reads filter starts with barcode09.
+Wed Jan 30 15:04:51 CET 2019 Reads filter ends with barcode09.
+Wed Jan 30 15:04:51 CET 2019 Reads check before filter starts with barcode11.
+Wed Jan 30 15:04:51 CET 2019 Reads check before filter ends with barcode11.
+Wed Jan 30 15:04:51 CET 2019 Reads filter starts with barcode11.
+Wed Jan 30 15:04:52 CET 2019 Reads filter ends with barcode11.
+Wed Jan 30 15:04:52 CET 2019 Reads check before filter starts with barcode12.
+Wed Jan 30 15:04:52 CET 2019 Reads check before filter ends with barcode12.
+Wed Jan 30 15:04:52 CET 2019 Reads filter starts with barcode12.
+Wed Jan 30 15:04:52 CET 2019 Reads filter ends with barcode12.
+Wed Jan 30 15:04:52 CET 2019 Reads check before filter starts with unclassified.
+Wed Jan 30 15:04:53 CET 2019 Reads check before filter ends with unclassified.
+Wed Jan 30 15:04:53 CET 2019 Reads filter starts with unclassified.
+Wed Jan 30 15:04:53 CET 2019 Reads filter ends with unclassified.
+Wed Jan 30 15:04:53 CET 2019 Reads filter ends.
+Wed Jan 30 15:04:53 CET 2019 Reads check after filter with NanoStat starts.
+Wed Jan 30 15:04:57 CET 2019 Reads check after filter ends.
+Wed Jan 30 15:04:57 CET 2019 Generate the summury files.
+Wed Jan 30 15:04:57 CET 2019 Done.
