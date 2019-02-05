@@ -1,0 +1,70 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=4
+#PBS -l walltime=120:00:00
+#PBS -j oe
+
+echo $(date) Analysis starts.
+echo $(date) Your workdir is "${WORKSPACE_PATH}".
+
+export PATH=$PBS_O_PATH
+cd ${WORKSPACE_PATH}
+mkdir -p $PWD/Analysis/{AdapterTrimmedFiles/,StatFiles/,FiltedFiles/,Logs/}
+cd pass/
+
+echo $(date) Adapter trimming starts with Porechop.
+
+if [ -z "${BARCODENUMBERS}" ]; then
+  for filename in */*.fastq; do
+    barcode=${filename%/*}
+    runid=${filename##*/}
+    echo $(date) Adapter trimming starts with "$filename". 
+    porechop -i "$filename" --no_split -o ../Analysis/AdapterTrimmedFiles/adaptertrimmed_"$barcode"_"$runid" -t $PBS_NUM_PPN > log_adaptertrimmed_"$barcode"_"$runid".log
+    mv -f log_adaptertrimmed_"$barcode"_"$runid".log ../Analysis/Logs
+    echo $(date) Adapter trimming ends with "$filename". 
+  done
+  echo $(date) Adapter trimming ends. 
+fi
+if [ ! -z "${BARCODENUMBERS}" ]; then
+  for filename in $(eval echo "${BARCODENUMBERS[@]}"'*.fastq'); do
+    barcode=${filename%/*}
+    runid=${filename##*/}
+    echo $(date) Adapter trimming starts with "$filename". 
+    porechop -i "$filename" --no_split -o ../Analysis/AdapterTrimmedFiles/adaptertrimmed_"$barcode"_"$runid" -t $PBS_NUM_PPN > log_adaptertrimmed_"$barcode"_"$runid".log
+    mv -f log_adaptertrimmed_"$barcode"_"$runid".log ../Analysis/Logs
+    echo $(date) Adapter trimming ends with "$filename".
+  done
+  echo $(date) Adapter trimming ends.
+fi
+
+echo $(date) Reads filte with NanoStat and NanoFilt starts.
+cd ${WORKSPACE_PATH}/Analysis/AdapterTrimmedFiles
+for filename in *; do
+  echo $(date) Reads check before filter starts with "$filename".
+  NanoStat --fastq "$filename" -t $PBS_NUM_PPN > stat_"$filename".txt
+  mv -f stat_"$filename".txt ../StatFiles
+  echo $(date) Reads check before filter ends with "$filename".
+  echo $(date) Reads filter starts with "$filename".
+  cat "$filename" | NanoFilt -q ${SCORE} -l ${LENGTH} --headcrop ${HEADCROP} --logfile log_filted_"$filename".log> filted_${filename}
+  mv -f filted_"$filename" ../FiltedFiles
+  mv -f log_filted_"$filename".log ../Logs
+  echo $(date) Reads filter ends with "$filename".
+done
+echo $(date) Reads filter ends.
+
+echo $(date) Reads check after filter with NanoStat starts.
+cd ${WORKSPACE_PATH}/Analysis/FiltedFiles
+for filename in *; do
+  if [ -s "$filename" ]; then
+    echo $(date) Reads check after filter starts with "$filename".
+    NanoStat --fastq "$filename" -t $PBS_NUM_PPN > stat_"$filename".txt
+    mv -f stat_"$filename".txt ../StatFiles
+    echo $(date) Reads check after filter ends with "$filename".
+  fi
+done
+echo $(date) Reads check after filter ends.
+cd ${WORKSPACE_PATH}/Analysis/AdapterTrimmedFiles
+echo $(date) Generate the summury files.
+NanoStat --fastq *.fastq -t $PBS_NUM_PPN > ${WORKSPACE_PATH}/Analysis/StatFiles/summary_stat_after_adaptertrimming.txt
+cd ${WORKSPACE_PATH}/Analysis/FiltedFiles
+NanoStat --fastq *.fastq -t $PBS_NUM_PPN > ${WORKSPACE_PATH}/Analysis/StatFiles/summary_stat_after_filter.txt
+echo $(date) Done.
