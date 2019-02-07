@@ -19,6 +19,18 @@ document.addEventListener('DOMContentLoaded', function(event){
   ipc.send('get-threads-number')
 });
 
+document.addEventListener('DOMContentLoaded', function(event){
+  ipc.send('get-flowcell-ids')
+});
+
+document.addEventListener('DOMContentLoaded', function(event){
+  ipc.send('get-kit-numbers')
+});
+
+document.addEventListener('DOMContentLoaded', function(event){
+  ipc.send('get-barcode-kits')
+});
+
 selectDirBtn.addEventListener('click', function (event) {
   ipc.send('open-file-dialog')
 });
@@ -114,6 +126,48 @@ ipc.on('jobstatus', function (event, status) {
 ipc.on('return-threads-number',function(event, threadsnumber){
   document.getElementById('threads').value = parseInt(threadsnumber);
   document.getElementById('nb-threads').value = parseInt(threadsnumber);
+})
+
+ipc.on('return-flowcell-ids',function(event, flowcellids){
+  let arr = flowcellids.split(/\n/);
+  //alert(arr);
+  let sel = document.getElementById('selectFlowCell');
+  for(let i = 0; i < arr.length; i++) {
+    let opt = document.createElement('option');
+    if (arr[i] !== '') {
+      opt.innerHTML = arr[i];
+      opt.value = arr[i];
+      sel.appendChild(opt);
+    }
+  }
+})
+
+ipc.on('return-kit-numbers',function(event, flowcellids){
+  let arr = flowcellids.split(/\n/);
+  //alert(arr);
+  let sel = document.getElementById('selectKitNumber');
+  for(let i = 0; i < arr.length; i++) {
+    let opt = document.createElement('option');
+    if (arr[i] !== '') {
+      opt.innerHTML = arr[i];
+      opt.value = arr[i];
+      sel.appendChild(opt);
+    }
+  }
+})
+
+ipc.on('return-barcode-kits',function(event, flowcellids){
+  let arr = flowcellids.split(/\n/);
+  //alert(arr);
+  let sel = document.getElementById('selectBarcodeKit');
+  for(let i = 0; i < arr.length; i++) {
+    let opt = document.createElement('option');
+    if (arr[i] !== '') {
+      opt.innerHTML = arr[i];
+      opt.value = arr[i];
+      sel.appendChild(opt);
+    }
+  }
 })
 
 ipc.on('selected-stat-file',function(event, path){

@@ -18,6 +18,33 @@ ipc.on('get-threads-number', function(event){
   });
 })
 
+ipc.on('get-flowcell-ids', function(event){
+  exec('guppy_basecaller --print_workflows | awk \'NR>2 {print $1}\' | sort | uniq', function (err, stdout, stderr) {
+    if (err) handleError();
+    console.log(stdout);
+    console.log(stderr);
+    event.sender.send('return-flowcell-ids',stdout);
+  });
+})
+
+ipc.on('get-kit-numbers', function(event){
+  exec('guppy_basecaller --print_workflows | awk \'NR>2 {print $2}\' | sort | uniq', function (err, stdout, stderr) {
+    if (err) handleError();
+    console.log(stdout);
+    console.log(stderr);
+    event.sender.send('return-kit-numbers',stdout);
+  });
+})
+
+ipc.on('get-barcode-kits', function(event){
+  exec('guppy_barcoder --print_kits | awk \'NR>1 {print $1}\' | sort | uniq', function (err, stdout, stderr) {
+    if (err) handleError();
+    console.log(stdout);
+    console.log(stderr);
+    event.sender.send('return-barcode-kits',stdout);
+  });
+})
+
 ipc.on('open-file-dialog', function (event) {
   dialog.showOpenDialog({
     properties: ['openDirectory']

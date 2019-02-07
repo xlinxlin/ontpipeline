@@ -1,0 +1,109 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=4
+#PBS -l walltime=01:00:00
+
+echo $(date) Analysis starts.
+echo $(date) Your workdir is "${WORKSPACE_PATH}".
+
+export PATH=$PBS_O_PATH
+cd ${WORKSPACE_PATH}
+cd ..
+mkdir $PWD/basecalled
+mkdir $PWD/barcodes
+
+echo $(date) Basecall starts.
+#read_fast5_basecaller.py -f ${FLOWCELL_ID} -k ${KIT_NUMBER} -t $PBS_NUM_PPN -s $PWD -o fastq -q 0 -i ${WORKSPACE_PATH} -r --barcoding
+guppy_basecaller --flowcell ${FLOWCELL_ID} --kit ${KIT_NUMBER} -i ${WORKSPACE_PATH} -s $PWD/basecalled/ --num_callers ${THREADS} --cpu_threads_per_caller 1 -q 0 -r --enable_trimming on
+echo $(date) Basecall ends.
+
+echo $(date) Demultiplexing starts.
+
+if [ ! -z "${BARCODEKIT}" ]; then
+  guppy_barcoder -i $PWD/basecalled/ -s $PWD/barcodes/ -t ${THREADS} -q 0 -r --barcode_kit ${BARCODEKIT}
+else 
+  guppy_barcoder -i $PWD/basecalled/ -s $PWD/barcodes/ -t ${THREADS} -q 0 -r 
+fi
+echo $(date) Demultiplexing ends.
+
+mkdir -p $PWD/Analysis/{AdapterTrimmedFiles/,StatFiles/,FiltedFiles/,Logs/}
+cd barcodes/
+
+#for filename in */*.fastq; do
+#  barcode=${filename%/*}
+  #runid=${filename##*/}
+#  runid=${filename:12:-6}
+#  filesize=$(stat -c%s "$filename")
+#  if (( $filesize > 1000000000 )); then
+#    split -l 400000 -d "$filename" "$barcode"/"$barcode"_runid_"$runid" --additional-suffix .fastq
+#    mv "$filename" "$filename".backup
+#  else
+#    mv "$filename" "$barcode"/"$barcode"_runid_"$runid".fastq
+#  fi
+#done
+
+echo $(date) Adapter trimming by using Porechop starts.
+source activate porechop
+if [ -z "${BARCODENUMBERS}" ]; then
+  for filename in */*.fastq; do
+    barcode=${filename%/*}
+    fn=${filename##*/}
+    #runid=${filename:12:-6}
+    echo $(date) Adapter trimming starts with "$filename".
+    #porechop -i "$filename" --no_split -o ../Analysis/AdapterTrimmedFiles/adaptertrimmed_"$barcode"_"$runid".fastq -t ${THREADS} > log_adaptertrimmed_"$barcode"_"$runid".log
+    porechop -i "$filename" --no_split -o ../Analysis/AdapterTrimmedFiles/adaptertrimmed_"$barcode"_"$fn" -t ${THREADS} > log_adaptertrimmed_"$barcode"_"$fn".log
+    mv -f log_adaptertrimmed_"$barcode"_"$fn".log ../Analysis/Logs
+    echo $(date) Adapter trimming ends with "$filename". 
+  done
+fi
+if [ ! -z "${BARCODENUMBERS}" ]; then
+  for filename in $(eval echo "${BARCODENUMBERS[@]}"'*.fastq'); do
+    barcode=${filename%/*}
+    fn=${filename##*/}
+    #runid=${filename:12:-6}
+    echo $(date) Adapter trimming starts with "$filename".
+    porechop -i "$filename" --no_split -o ../Analysis/AdapterTrimmedFiles/adaptertrimmed_"$barcode"_"$fn" -t ${THREADS} > log_adaptertrimmed_"$barcode"_"$fn".log
+    mv -f log_adaptertrimmed_"$barcode"_"$fn".log ../Analysis/Logs
+    echo $(date) Adapter trimming ends with "$filename". 
+  done
+fi
+source deactivate
+echo $(date) Adapter trimming by using Porechop ends.
+
+echo $(date) Reads filte with NanoStat and NanoFilt starts.
+cd ../Analysis/AdapterTrimmedFiles
+for filename in *; do
+  source activate nanostat
+  echo $(date) Reads check before filter starts with "$filename".
+  NanoStat --fastq "$filename" -t ${THREADS} > stat_"$filename".txt
+  mv -f stat_"$filename".txt ../StatFiles
+  source deactivate
+  echo $(date) Reads check before filter ends with "$filename".
+  source activate nanofilt
+  echo $(date) Reads filter starts with "$filename".
+  cat "$filename" | NanoFilt -q ${SCORE} -l ${LENGTH} --headcrop ${HEADCROP} --logfile log_filted_"$filename".log> filted_${filename}
+  mv -f filted_"$filename" ../FiltedFiles
+  mv -f log_filted_"$filename".log ../Logs
+  echo $(date) Reads filter ends with "$filename".
+  source deactivate
+done
+echo $(date) Reads filter ends.
+
+source activate nanostat
+echo $(date) Reads check after filter with NanoStat starts.
+cd ../FiltedFiles
+for filename in *; do
+  if [ -s "$filename" ]; then
+    NanoStat --fastq "$filename" -t ${THREADS} > stat_"$filename".txt
+    mv -f stat_"$filename".txt ../StatFiles
+  fi
+done
+echo $(date) Reads check after filter ends.
+source deactivate
+source activate nanostat
+cd ../AdapterTrimmedFiles
+echo $(date) Generate the summury files.
+NanoStat --fastq *.fastq -t ${THREADS} > ../StatFiles/summary_stat_after_adaptertrimming.txt
+cd ../FiltedFiles
+NanoStat --fastq *.fastq -t ${THREADS} > ../StatFiles/summary_stat_after_filter.txt
+echo $(date) Done.
+source deactivate
