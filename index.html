@@ -69,6 +69,7 @@
                 </div>
               </div>
             </div>
+
             <div class="card">
               <div class="card-header">
                 2. Reads Filter Settings
@@ -125,6 +126,23 @@
                 </div>
               </div>
 
+              <!--
+              <div class="form-group row">
+                <div class="col-2">
+                  <label for="barcodes" class="col-form-label" data-toggle="tooltip" data-placement="right" title="set which barcodes you want to analysis, e.g.: 1,2,3,4">Barcodes</label>
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" id="nb-barcodes" name="nb-barcodes">
+                </div>
+                <div class="col-2">
+                  <label for="threads" class="col-form-label" data-toggle="tooltip" data-placement="right" title="set how many threads do you need (required)">Threads</label>
+                </div>
+                <div class="col-4">
+                  <input type="number" class="form-control" id="nb-threads" min="1" step="1" value="" required>
+                </div>
+              </div>
+              -->
+
               <div class="form-group row">
                 <label for="barcodes" class="col-sm-2 col-form-label" data-toggle="tooltip" data-placement="right" title="set which barcodes you want to analysis, e.g.: 1,2,3,4">Barcodes</label>
                 <div class="col-sm-10">
@@ -145,7 +163,7 @@
               <p></p>
 
               <div class="form-group row">
-                <label for="selectFlowCell" class="col-sm-2 col-form-label">Flowcell Id</label>
+                <label for="selectFlowCell" class="col-sm-2 col-form-label">Flowcell ID</label>
                 <div class="col-sm-10">
                   <select class="form-control" id="selectFlowCell">
                   </select>
@@ -201,28 +219,47 @@
 
             <div class="card">
               <div class="card-header">
-                4. Assembly Settings (Unicycler)
+                4. Assembly Settings
               </div>
               <!--<button id="nb-startpipeline" class="btn btn-primary">Submit</button>-->
               <p></p>
+
               <div class="form-group row">
-                <label for="select short1" class="col-sm-2 col-form-label">Short 1</label>
+                <label for="selectAssembler" class="col-sm-2 col-form-label">Assembler
+                </label>
                 <div class="col-sm-10">
-                  <div class="input-group">
-                    <input id="selected-short1" name="selected-short1" class="form-control col-sm-8" value="" /></input>
-                    <button id="select-short1" name="select-short1" class="btn btn-primary">Browse</button>
-                  </div>
+                  <select class="form-control" id="selectAssembler">
+                    <option>Canu</option>
+                    <option>Flye</option>
+                    <option selected>Unicycler</option> 
+                  </select>
                 </div>
               </div>
 
-              <div class="form-group row">
-                <label for="select short2" class="col-sm-2 col-form-label">Short 2</label>
-                <div class="col-sm-10">
-                  <div class="input-group">
-                    <input id="selected-short2" name="selected-short2" class="form-control col-sm-8" value="" /></input>
-                    <button id="select-short2" name="select-short2" class="btn btn-primary">Browse</button>
+              <div id="changecontent">
+
+              
+
+                <div class="form-group row">
+                  <label for="select short1" class="col-sm-2 col-form-label">Short 1</label>
+                  <div class="col-sm-10">
+                    <div class="input-group">
+                      <input id="selected-short1" name="selected-short1" class="form-control col-sm-8" value="" /></input>
+                      <button id="select-short1" name="select-short1" class="btn btn-primary">Browse</button>
+                    </div>
                   </div>
                 </div>
+
+                <div class="form-group row">
+                  <label for="select short2" class="col-sm-2 col-form-label">Short 2</label>
+                  <div class="col-sm-10">
+                    <div class="input-group">
+                      <input id="selected-short2" name="selected-short2" class="form-control col-sm-8" value="" /></input>
+                      <button id="select-short2" name="select-short2" class="btn btn-primary">Browse</button>
+                    </div>
+                  </div>
+                </div>
+
               </div>
 
               <input type="submit" id="nb-startpipeline" class="btn btn-primary" value="submit">

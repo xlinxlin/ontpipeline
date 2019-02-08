@@ -12,6 +12,7 @@ const nbSelectDirBtn = document.getElementById('nb-select-file')
 const nbSubmitBtn = document.getElementById('nb-startpipeline')
 const checkjobstatusBtn = document.getElementById('checkjobstatus')
 const selectStatFileBtn = document.getElementById('select-stat-file')
+const selectAssembler = document.getElementById('selectAssembler')
 //const checkAlbacore = document.getElementById('basecaller_albacore')
 //const checkGuppy = document.getElementById('basecaller_guppy')
 
@@ -45,6 +46,47 @@ checkjobstatusBtn.addEventListener('click', function (event) {
 
 selectStatFileBtn.addEventListener('click', function (event) {
   ipc.send('selectstatfile')
+});
+
+selectAssembler.addEventListener('change', function (event) {
+  //alert(selectAssembler.options[selectAssembler.selectedIndex].value)
+  if (selectAssembler.options[selectAssembler.selectedIndex].value === 'Flye') {
+    document.getElementById('changecontent').innerHTML = 
+      '<div class="form-group row">'
+      +'<label for="genome-size-flye" class="col-sm-2 col-form-label">Genome Size</label>'
+      +'<div class="col-sm-10">'
+      +'<input type="text" class="form-control" id="genome-size-flye" name="genome-size-flye" required>'
+      +'</div>'
+      +'</div>'
+  } else if (selectAssembler.options[selectAssembler.selectedIndex].value === 'Canu') {
+    document.getElementById('changecontent').innerHTML = 
+    '<div class="form-group row">'
+    +'<label for="genome-size-canu" class="col-sm-2 col-form-label">Genome Size</label>'
+    +'<div class="col-sm-10">'
+    +'<input type="text" class="form-control" id="genome-size-canu" name="genome-size-canu" required>'
+    +'</div>'
+    +'</div>'
+  } else {
+    document.getElementById('changecontent').innerHTML = 
+      '<div class="form-group row">'
+      +'<label for="select-short1" class="col-sm-2 col-form-label">Short 1</label>'
+      +'<div class="col-sm-10">'
+      +'<div class="input-group">'
+      +'<input id="selected-short1" name="selected-short1" class="form-control col-sm-8" value="" /></input>'
+      +'<button id="select-short1" name="select-short1" class="btn btn-primary">Browse</button>'
+      +'</div>'
+      +'</div>'
+      +'</div>'
+      +'<div class="form-group row">'
+      +'<label for="select short2" class="col-sm-2 col-form-label">Short 2</label>'
+      +'<div class="col-sm-10">'
+      +'<div class="input-group">'
+      +'<input id="selected-short2" name="selected-short2" class="form-control col-sm-8" value="" /></input>'
+      +'<button id="select-short2" name="select-short2" class="btn btn-primary">Browse</button>'
+      +'</div>'
+      +'</div>'
+      +'</div>'
+  }
 });
 
 // sumbit the data for basecalled fastq files
@@ -85,10 +127,12 @@ nbSubmitBtn.addEventListener('click', function (event) {
   let headcrop = document.getElementById('nb-headcrop').value;
   let ppn = document.getElementById('nb-threads').value;
   let jobname = document.getElementById('nb-jobname').value === ''?'':'-N '+document.getElementById('nb-jobname').value;
+  let assembler = document.getElementById('selectAssembler');
   let execstr = '';
   if(barcodes===''){
     if(document.getElementById('basecaller_albacore').checked){
-      execstr = 'qsub '+jobname+' -l ncpus='+ppn+' -v FLOWCELL_ID='+flowcellid+',KIT_NUMBER='+kitnumber+',SCORE='+score+',LENGTH='+length+',HEADCROP='+headcrop+',WORKSPACE_PATH='+workspace+' ~/pbsScripts/ontnb.pbs';
+      execstr = 'qsub '+jobname+' -l ncpus='+ppn+' -v FLOWCELL_ID='+flowcellid+',KIT_NUMBER='+kitnumber
+      +',SCORE='+score+',LENGTH='+length+',HEADCROP='+headcrop+',WORKSPACE_PATH='+workspace+',ASSEMBLER='+assembler+' ~/pbsScripts/ontb_guppy.pbs';
     } else if (document.getElementById('basecaller_guppy').checked) {
       alert('guppy');
     } else {
@@ -100,7 +144,8 @@ nbSubmitBtn.addEventListener('click', function (event) {
       barcodes[i] = padDigits(barcodes[i],2);
     }
     barcodes = 'barcode{'+barcodes.join()+',}/';
-    execstr = 'qsub '+jobname+' -l ncpus='+ppn+' -v "BARCODENUMBERS=\''+barcodes+'\'",FLOWCELL_ID='+flowcellid+',KIT_NUMBER='+kitnumber+',SCORE='+score+',LENGTH='+length+',HEADCROP='+headcrop+',WORKSPACE_PATH='+workspace+' ~/pbsScripts/ontnb.pbs';
+    execstr = 'qsub '+jobname+' -l ncpus='+ppn+' -v "BARCODENUMBERS=\''+barcodes+'\'",FLOWCELL_ID='+flowcellid+',KIT_NUMBER='+kitnumber
+    +',SCORE='+score+',LENGTH='+length+',HEADCROP='+headcrop+',WORKSPACE_PATH='+workspace+',ASSEMBLER='+assembler+' ~/pbsScripts/ontb_guppy.pbs';
   }
   exec(execstr, function (err, stdout, stderr) {
     if (err) handleError();

@@ -105,5 +105,22 @@ echo $(date) Generate the summury files.
 NanoStat --fastq *.fastq -t ${THREADS} > ../StatFiles/summary_stat_after_adaptertrimming.txt
 cd ../FiltedFiles
 NanoStat --fastq *.fastq -t ${THREADS} > ../StatFiles/summary_stat_after_filter.txt
+
+if [ "$ASSEMBLER" = "Canu" ]; then
+echo $(date) Assembly with Canu starts.
+source activate Canu
+source deactivate
+elif [ "$ASSEMBLER" = "Flye" ]; then
+echo $(date) Assembly with Flye starts.
+source activate Flye
+source deactivate
+else
+echo $(date) Assembly with Unicycler starts.
+source activate Unicycler
+source deactivate
+fi
+echo $(date) Assembly ends.
+
+
 echo $(date) Done.
 source deactivate
