@@ -1,6 +1,6 @@
 Reads Filter Settings
 =====================
-1. Read Score (Required)
+Read Score (Required)
 ________________________
 Set a minimum average read quality score to filter the reads.
 
@@ -8,7 +8,7 @@ Set a minimum average read quality score to filter the reads.
   * Default value is 9.
   * If you want to keep all the reads, set the value to 0, or only a postive integer is acceptable.
 
-2. Read Length (Required)
+Read Length (Required)
 _________________________
 Set a minimum read length to filter reads.
 
@@ -16,7 +16,7 @@ Set a minimum read length to filter reads.
   * Default value is 500.
   * If you want to keep all the reads, set the value to 0, or only a postive integer is acceptable.
 
-3. Head Crop (Required)
+Head Crop (Required)
 _______________________
 
 .. note::
