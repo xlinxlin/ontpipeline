@@ -1,12 +1,12 @@
 Assembly Settings
 =================
-1. Assembler (Required)
+Assembler (Required)
 _______________________
 Choose an assembler tool from the select list.
 
-1.1 Canu
+Canu
 ~~~~~~~~
-1.1.1 Genome Size (Required)
+Genome Size (Required)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Set the estimated genome size.
 
