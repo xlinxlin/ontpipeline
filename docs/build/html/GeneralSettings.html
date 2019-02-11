@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to ontpipeline’s documentation! &mdash; ontpipeline  documentation</title>
+  <title>General Settings &mdash; ontpipeline  documentation</title>
   
 
   
@@ -28,7 +28,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="General Settings" href="GeneralSettings.html" /> 
+    <link rel="next" title="Basecalling Settings" href="BasecallingSettings.html" />
+    <link rel="prev" title="Welcome to ontpipeline’s documentation!" href="index.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -47,7 +48,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> ontpipeline
+            <a href="index.html" class="icon icon-home"> ontpipeline
           
 
           
@@ -77,8 +78,14 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="GeneralSettings.html">General Settings</a></li>
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">General Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#job-name-optional">1. Job Name (Optional)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#workspace-required">2. Workspace (Required)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#barcodes-optional">3. Barcodes (Optional)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#threads-required">4. Threads (Required)</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="BasecallingSettings.html">Basecalling Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ReadsFilterSettings.html">Reads Filter Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="AssemblySettings.html">Assembly Settings</a></li>
@@ -96,7 +103,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">ontpipeline</a>
+          <a href="index.html">ontpipeline</a>
         
       </nav>
 
@@ -125,15 +132,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Welcome to ontpipeline’s documentation!</li>
+      <li>General Settings</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/GeneralSettings.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -146,43 +153,50 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-ontpipeline-s-documentation">
-<h1>Welcome to ontpipeline’s documentation!<a class="headerlink" href="#welcome-to-ontpipeline-s-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="GeneralSettings.html">General Settings</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="GeneralSettings.html#job-name-optional">1. Job Name (Optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="GeneralSettings.html#workspace-required">2. Workspace (Required)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="GeneralSettings.html#barcodes-optional">3. Barcodes (Optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="GeneralSettings.html#threads-required">4. Threads (Required)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="BasecallingSettings.html">Basecalling Settings</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="BasecallingSettings.html#flowcell-id-required">1. Flowcell ID (Required)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="BasecallingSettings.html#kit-number-requied">2. Kit Number (Requied)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="BasecallingSettings.html#barcode-kit-optional">3. Barcode kit (Optional)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="ReadsFilterSettings.html">Reads Filter Settings</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ReadsFilterSettings.html#read-score-required">1. Read Score (Required)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ReadsFilterSettings.html#read-length-required">2. Read Length (Required)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ReadsFilterSettings.html#head-crop-required">3. Head Crop (Required)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="AssemblySettings.html">Assembly Settings</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="AssemblySettings.html#assembler-required">1. Assembler (Required)</a></li>
-</ul>
-</li>
+  <div class="section" id="general-settings">
+<h1>General Settings<a class="headerlink" href="#general-settings" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="job-name-optional">
+<h2>1. Job Name (Optional)<a class="headerlink" href="#job-name-optional" title="Permalink to this headline">¶</a></h2>
+<p>Set the name of your job.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Up to 15 characters, no blank spaces, start with alphanumeric character.</li>
+<li>If you want to use the default value, leave it blank.</li>
 </ul>
 </div>
 </div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+<div class="section" id="workspace-required">
+<h2>2. Workspace (Required)<a class="headerlink" href="#workspace-required" title="Permalink to this headline">¶</a></h2>
+<p>Set the path to the folder where contains the .fast5 files.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li><strong>Example:</strong> /home/ynzhou/NCCTData/20181109_1435_20181109_VRE_I/fast5</li>
 </ul>
+</div>
+</div>
+<div class="section" id="barcodes-optional">
+<h2>3. Barcodes (Optional)<a class="headerlink" href="#barcodes-optional" title="Permalink to this headline">¶</a></h2>
+<p>Set which barcodes should be included into the analysis. Put in the numbers and separate them with a comma.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li><strong>Example:</strong> 1,2,3,4</li>
+<li>If you want to include all barcodes in your analysis, leave it blank.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="threads-required">
+<h2>4. Threads (Required)<a class="headerlink" href="#threads-required" title="Permalink to this headline">¶</a></h2>
+<p>Set the number of threads to run the analysis.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>The program will automatically find the max number of threads available on the system and set it to the default value.</li>
+</ul>
+</div>
+</div>
 </div>
 
 
@@ -193,8 +207,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="GeneralSettings.html" class="btn btn-neutral float-right" title="General Settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="BasecallingSettings.html" class="btn btn-neutral float-right" title="Basecalling Settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to ontpipeline’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

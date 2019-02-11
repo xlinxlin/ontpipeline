@@ -8,7 +8,14 @@ Welcome to ontpipeline's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+
+   GeneralSettings.rst
+   BasecallingSettings.rst
+   ReadsFilterSettings.rst
+   AssemblySettings.rst
+
+
+
 
 
 
