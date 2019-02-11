@@ -27,6 +27,6 @@ Set the path to the fastq file of first short reads in each pair.
 Set the path to the fastq file of second short reads in each pair
 
 .. note::
-  * These two options are required in **hybrid assembly** mode, or leave if blank for **long-read-only assembly** mode.
+  * These two options are required in **hybrid assembly** mode, or leave it blank for **long-read-only assembly** mode.
   * These two fastq files should be obtained from Illumina sequencing.
 
