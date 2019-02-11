@@ -13,15 +13,3 @@ Welcome to ontpipeline's documentation!
    BasecallingSettings.rst
    ReadsFilterSettings.rst
    AssemblySettings.rst
-
-
-
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
