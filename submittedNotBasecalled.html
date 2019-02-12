@@ -17,15 +17,19 @@
       </div>
       <table class="table">
         <tr>
-          <th>workspace</th>
+          <th>Job Name</th>
+          <td id="jobname"></td>
+        </tr>
+        <tr>
+          <th>Workspace</th>
           <td id="workspace"></td>
         </tr>
         <tr>
-          <th>barcodes</th>
+          <th>Barcode(s)</th>
           <td id="barcodes"></td>
         </tr>
         <tr>
-          <th>threads</th>
+          <th>Threads</th>
           <td id="threads"></td>
         </tr>
         <tr>
@@ -37,23 +41,46 @@
           <td id="kitnumber"></td>
         </tr>
         <tr>
-          <th>read score</th>
+          <th>Barcode Kit(s)</th>
+          <td id="barcodekits"></td>
+          </tr>
+        <tr>
+          <th>Read Score</th>
           <td id="readscore"></td>
         </tr>
         <tr>
-          <th>read length</th>
+          <th>Read Length</th>
           <td id="readlength"></td>
         </tr>
         <tr>
-          <th>head crop</th>
+          <th>Head Crop</th>
           <td id="headcrop"></td>
+        </tr>
+        <tr>
+          <th>Assembler</th>
+          <td id="assembler"></td>
         </tr>
       </table>
     </div>
   </body>
   <script language="JavaScript">
     function show() {
-      let parameters = location.search.substring(1).split('&');
+      let urlParams = new URLSearchParams(window.location.search);
+      //alert(location.search.substring(1));
+      //let parameters = location.search.substring(1).split('&');
+      //alert(parameters);
+      document.getElementById('jobname').innerHTML = urlParams.get('nb-jobname');
+      document.getElementById('workspace').innerHTML = urlParams.get('nb-selected-file');
+      document.getElementById('barcodes').innerHTML = urlParams.get('nb-barcodes') === ''? 'All': urlParams.get('nb-barcodes');
+      document.getElementById('threads').innerHTML = urlParams.get('nb-threads');
+      document.getElementById('flowcellid').innerHTML = urlParams.get('selectFlowCell');
+      document.getElementById('kitnumber').innerHTML = urlParams.get('selectKitNumber');
+      document.getElementById('barcodekits').innerHTML = urlParams.getAll('selectBarcodeKit');
+      document.getElementById('readscore').innerHTML = urlParams.get('nb-read-score');
+      document.getElementById('readlength').innerHTML = urlParams.get('nb-read-length');
+      document.getElementById('headcrop').innerHTML = urlParams.get('nb-headcrop');
+      document.getElementById('assembler').innerHTML = urlParams.get('selectAssembler');
+      /*
       let temp = parameters[1].split('=');
       document.getElementById('workspace').innerHTML = unescape(temp[1]);
       temp = parameters[2].split('=');
@@ -70,6 +97,7 @@
       document.getElementById('readlength').innerHTML = unescape(temp[1]);
       temp = parameters[8].split('=');
       document.getElementById('headcrop').innerHTML = unescape(temp[1]);
+      */
     }
     show();
   </script>    

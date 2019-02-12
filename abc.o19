@@ -1,0 +1,773 @@
+Tue Feb 12 13:39:07 CET 2019 Analysis starts.
+Tue Feb 12 13:39:07 CET 2019 Your workdir is 123.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 10: cd: 123: No such file or directory
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 12: cd: pass/: No such file or directory
+stat: cannot stat '*/*.fastq': No such file or directory
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 18: ((: > 1000000000 : syntax error: operand expected (error token is "> 1000000000 ")
+mv: cannot stat '*/*.fastq': No such file or directory
+Tue Feb 12 13:39:07 CET 2019 Adapter trimming starts with Porechop.
+Tue Feb 12 13:39:07 CET 2019 Adapter trimming starts with barcode456/*.fastq.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 44: porechop: command not found
+mv: cannot move 'log_adaptertrimmed_barcode456_*.fastq.log' to '../Analysis/Logs': No such file or directory
+Tue Feb 12 13:39:07 CET 2019 Adapter trimming ends with barcode456/*.fastq.
+Tue Feb 12 13:39:07 CET 2019 Adapter trimming starts with barcode/*.fastq.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 44: porechop: command not found
+mv: cannot move 'log_adaptertrimmed_barcode_*.fastq.log' to '../Analysis/Logs': No such file or directory
+Tue Feb 12 13:39:07 CET 2019 Adapter trimming ends with barcode/*.fastq.
+Tue Feb 12 13:39:07 CET 2019 Adapter trimming ends.
+Tue Feb 12 13:39:07 CET 2019 Reads filt with NanoStat and NanoFilt starts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 52: cd: 123/Analysis/AdapterTrimmedFiles: No such file or directory
+Tue Feb 12 13:39:07 CET 2019 Reads check before filter starts with 2018Bewerbung.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_2018Bewerbung.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:07 CET 2019 Reads check before filter ends with 2018Bewerbung.
+Tue Feb 12 13:39:07 CET 2019 Reads filter starts with 2018Bewerbung.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: 2018Bewerbung: Is a directory
+mv: cannot move 'filted_2018Bewerbung' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_2018Bewerbung.log': No such file or directory
+Tue Feb 12 13:39:07 CET 2019 Reads filter ends with 2018Bewerbung.
+Tue Feb 12 13:39:07 CET 2019 Reads check before filter starts with Analysis.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Analysis.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:07 CET 2019 Reads check before filter ends with Analysis.
+Tue Feb 12 13:39:07 CET 2019 Reads filter starts with Analysis.
+cat: Analysis: Is a directory
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+mv: cannot move 'filted_Analysis' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Analysis.log': No such file or directory
+Tue Feb 12 13:39:07 CET 2019 Reads filter ends with Analysis.
+Tue Feb 12 13:39:07 CET 2019 Reads check before filter starts with Android.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Android.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:07 CET 2019 Reads check before filter ends with Android.
+Tue Feb 12 13:39:07 CET 2019 Reads filter starts with Android.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: Android: Is a directory
+mv: cannot move 'filted_Android' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Android.log': No such file or directory
+Tue Feb 12 13:39:07 CET 2019 Reads filter ends with Android.
+Tue Feb 12 13:39:07 CET 2019 Reads check before filter starts with AndroidStudioProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_AndroidStudioProjects.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:07 CET 2019 Reads check before filter ends with AndroidStudioProjects.
+Tue Feb 12 13:39:07 CET 2019 Reads filter starts with AndroidStudioProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: AndroidStudioProjects: Is a directory
+mv: cannot move 'filted_AndroidStudioProjects' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_AndroidStudioProjects.log': No such file or directory
+Tue Feb 12 13:39:07 CET 2019 Reads filter ends with AndroidStudioProjects.
+Tue Feb 12 13:39:07 CET 2019 Reads check before filter starts with Arbeistvertrag.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Arbeistvertrag.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:07 CET 2019 Reads check before filter ends with Arbeistvertrag.
+Tue Feb 12 13:39:07 CET 2019 Reads filter starts with Arbeistvertrag.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: Arbeistvertrag: Is a directory
+mv: cannot move 'filted_Arbeistvertrag' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Arbeistvertrag.log': No such file or directory
+Tue Feb 12 13:39:07 CET 2019 Reads filter ends with Arbeistvertrag.
+Tue Feb 12 13:39:07 CET 2019 Reads check before filter starts with Desktop.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Desktop.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:07 CET 2019 Reads check before filter ends with Desktop.
+Tue Feb 12 13:39:07 CET 2019 Reads filter starts with Desktop.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: Desktop: Is a directory
+mv: cannot move 'filted_Desktop' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Desktop.log': No such file or directory
+Tue Feb 12 13:39:07 CET 2019 Reads filter ends with Desktop.
+Tue Feb 12 13:39:07 CET 2019 Reads check before filter starts with DjangoProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_DjangoProjects.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with DjangoProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with DjangoProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: DjangoProjects: Is a directory
+mv: cannot move 'filted_DjangoProjects' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_DjangoProjects.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with DjangoProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with Documents.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Documents.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with Documents.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with Documents.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: Documents: Is a directory
+mv: cannot move 'filted_Documents' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Documents.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with Documents.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with Downloads.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Downloads.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with Downloads.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with Downloads.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: Downloads: Is a directory
+mv: cannot move 'filted_Downloads' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Downloads.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with Downloads.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with Dropbox.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Dropbox.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with Dropbox.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with Dropbox.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: Dropbox: Is a directory
+mv: cannot move 'filted_Dropbox' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Dropbox.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with Dropbox.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with Japanese.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Japanese.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with Japanese.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with Japanese.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: Japanese: Is a directory
+mv: cannot move 'filted_Japanese' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Japanese.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with Japanese.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with Mietvertrag.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Mietvertrag.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with Mietvertrag.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with Mietvertrag.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: Mietvertrag: Is a directory
+mv: cannot move 'filted_Mietvertrag' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Mietvertrag.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with Mietvertrag.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with Music.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Music.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with Music.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with Music.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: Music: Is a directory
+mv: cannot move 'filted_Music' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Music.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with Music.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with NetBeansProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_NetBeansProjects.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with NetBeansProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with NetBeansProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: NetBeansProjects: Is a directory
+mv: cannot move 'filted_NetBeansProjects' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_NetBeansProjects.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with NetBeansProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with Pictures.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Pictures.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with Pictures.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with Pictures.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: Pictures: Is a directory
+mv: cannot move 'filted_Pictures' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Pictures.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with Pictures.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with Public.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Public.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with Public.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with Public.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: Public: Is a directory
+mv: cannot move 'filted_Public' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Public.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with Public.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with PycharmProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_PycharmProjects.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with PycharmProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with PycharmProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: PycharmProjects: Is a directory
+mv: cannot move 'filted_PycharmProjects' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_PycharmProjects.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with PycharmProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with RShiny.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_RShiny.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with RShiny.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with RShiny.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: RShiny: Is a directory
+mv: cannot move 'filted_RShiny' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_RShiny.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with RShiny.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with Templates.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Templates.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with Templates.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with Templates.
+cat: Templates: Is a directory
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+mv: cannot move 'filted_Templates' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Templates.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with Templates.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with Untitled.ipynb.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_Untitled.ipynb.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with Untitled.ipynb.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with Untitled.ipynb.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+mv: cannot move 'filted_Untitled.ipynb' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_Untitled.ipynb.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with Untitled.ipynb.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with WeddingPhotos.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_WeddingPhotos.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with WeddingPhotos.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with WeddingPhotos.
+cat: WeddingPhotos: Is a directory
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+mv: cannot move 'filted_WeddingPhotos' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_WeddingPhotos.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with WeddingPhotos.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with WohnungSuchen.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_WohnungSuchen.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with WohnungSuchen.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with WohnungSuchen.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: WohnungSuchen: Is a directory
+mv: cannot move 'filted_WohnungSuchen' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_WohnungSuchen.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with WohnungSuchen.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with anaconda3.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_anaconda3.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with anaconda3.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with anaconda3.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: anaconda3: Is a directory
+mv: cannot move 'filted_anaconda3' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_anaconda3.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with anaconda3.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with bashScripts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_bashScripts.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with bashScripts.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with bashScripts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: bashScripts: Is a directory
+mv: cannot move 'filted_bashScripts' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_bashScripts.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with bashScripts.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with bin.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_bin.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with bin.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with bin.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: bin: Is a directory
+mv: cannot move 'filted_bin' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_bin.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with bin.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with books.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_books.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with books.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with books.
+cat: books: Is a directory
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+mv: cannot move 'filted_books' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_books.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with books.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with cProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_cProjects.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with cProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with cProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: cProjects: Is a directory
+mv: cannot move 'filted_cProjects' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_cProjects.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with cProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with citra.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_citra.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with citra.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with citra.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: citra: Is a directory
+mv: cannot move 'filted_citra' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_citra.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with citra.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with cmake.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_cmake.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with cmake.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with cmake.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: cmake: Is a directory
+mv: cannot move 'filted_cmake' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_cmake.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with cmake.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with cmake-3.9.0-Linux-x86_64.sh.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_cmake-3.9.0-Linux-x86_64.sh.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with cmake-3.9.0-Linux-x86_64.sh.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with cmake-3.9.0-Linux-x86_64.sh.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: write error: Broken pipe
+mv: cannot move 'filted_cmake-3.9.0-Linux-x86_64.sh' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_cmake-3.9.0-Linux-x86_64.sh.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with cmake-3.9.0-Linux-x86_64.sh.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with deja-dup.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_deja-dup.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with deja-dup.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with deja-dup.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: deja-dup: Is a directory
+mv: cannot move 'filted_deja-dup' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_deja-dup.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with deja-dup.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with dw.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_dw.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with dw.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with dw.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: dw: Is a directory
+mv: cannot move 'filted_dw' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_dw.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with dw.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with environments.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_environments.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with environments.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with environments.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: environments: Is a directory
+mv: cannot move 'filted_environments' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_environments.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with environments.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with examples.desktop.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_examples.desktop.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with examples.desktop.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with examples.desktop.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: write error: Broken pipe
+mv: cannot move 'filted_examples.desktop' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_examples.desktop.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with examples.desktop.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with glassfish-4.1.1.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_glassfish-4.1.1.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with glassfish-4.1.1.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with glassfish-4.1.1.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: glassfish-4.1.1: Is a directory
+mv: cannot move 'filted_glassfish-4.1.1' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_glassfish-4.1.1.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with glassfish-4.1.1.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with guppy_workflows.txt.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_guppy_workflows.txt.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with guppy_workflows.txt.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with guppy_workflows.txt.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: write error: Broken pipe
+mv: cannot move 'filted_guppy_workflows.txt' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_guppy_workflows.txt.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with guppy_workflows.txt.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with hp-check.log.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_hp-check.log.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with hp-check.log.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with hp-check.log.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: write error: Broken pipe
+mv: cannot move 'filted_hp-check.log' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_hp-check.log.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with hp-check.log.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with learn_Linux.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_learn_Linux.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with learn_Linux.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with learn_Linux.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: learn_Linux: Is a directory
+mv: cannot move 'filted_learn_Linux' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_learn_Linux.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with learn_Linux.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with log_adaptertrimmed_barcode456_*.fastq.log.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_log_adaptertrimmed_barcode456_*.fastq.log.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with log_adaptertrimmed_barcode456_*.fastq.log.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with log_adaptertrimmed_barcode456_*.fastq.log.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+mv: cannot move 'filted_log_adaptertrimmed_barcode456_*.fastq.log' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_log_adaptertrimmed_barcode456_*.fastq.log.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with log_adaptertrimmed_barcode456_*.fastq.log.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with log_adaptertrimmed_barcode_*.fastq.log.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_log_adaptertrimmed_barcode_*.fastq.log.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with log_adaptertrimmed_barcode_*.fastq.log.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with log_adaptertrimmed_barcode_*.fastq.log.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+mv: cannot move 'filted_log_adaptertrimmed_barcode_*.fastq.log' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_log_adaptertrimmed_barcode_*.fastq.log.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with log_adaptertrimmed_barcode_*.fastq.log.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with makefileScripts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_makefileScripts.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with makefileScripts.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with makefileScripts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: makefileScripts: Is a directory
+mv: cannot move 'filted_makefileScripts' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_makefileScripts.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with makefileScripts.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with ncct.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_ncct.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with ncct.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with ncct.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: ncct: Is a directory
+mv: cannot move 'filted_ncct' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_ncct.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with ncct.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with netbeans-8.2.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_netbeans-8.2.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with netbeans-8.2.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with netbeans-8.2.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: netbeans-8.2: Is a directory
+mv: cannot move 'filted_netbeans-8.2' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_netbeans-8.2.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with netbeans-8.2.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with nextflow.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_nextflow.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with nextflow.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with nextflow.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+mv: cannot move 'filted_nextflow' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_nextflow.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with nextflow.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with nextflowScripts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_nextflowScripts.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with nextflowScripts.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with nextflowScripts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: nextflowScripts: Is a directory
+mv: cannot move 'filted_nextflowScripts' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_nextflowScripts.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with nextflowScripts.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with node_modules.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_node_modules.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with node_modules.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with node_modules.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: node_modules: Is a directory
+mv: cannot move 'filted_node_modules' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_node_modules.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with node_modules.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with nodejsProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_nodejsProjects.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with nodejsProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with nodejsProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: nodejsProjects: Is a directory
+mv: cannot move 'filted_nodejsProjects' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_nodejsProjects.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with nodejsProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with nsegata-phylophlan.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_nsegata-phylophlan.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with nsegata-phylophlan.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with nsegata-phylophlan.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: nsegata-phylophlan: Is a directory
+mv: cannot move 'filted_nsegata-phylophlan' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_nsegata-phylophlan.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with nsegata-phylophlan.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with package-lock.json.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_package-lock.json.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with package-lock.json.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with package-lock.json.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: write error: Broken pipe
+mv: cannot move 'filted_package-lock.json' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_package-lock.json.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with package-lock.json.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with papers.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_papers.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with papers.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with papers.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: papers: Is a directory
+mv: cannot move 'filted_papers' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_papers.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with papers.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with pbsScripts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_pbsScripts.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with pbsScripts.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with pbsScripts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: pbsScripts: Is a directory
+mv: cannot move 'filted_pbsScripts' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_pbsScripts.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with pbsScripts.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with probeaufgabe_animus.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_probeaufgabe_animus.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with probeaufgabe_animus.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with probeaufgabe_animus.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: probeaufgabe_animus: Is a directory
+mv: cannot move 'filted_probeaufgabe_animus' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_probeaufgabe_animus.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with probeaufgabe_animus.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with snap.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_snap.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with snap.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with snap.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: snap: Is a directory
+mv: cannot move 'filted_snap' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_snap.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with snap.
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter starts with 申请记录.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 55: NanoStat: command not found
+mv: cannot move 'stat_'$'\347\224\263\350\257\267\350\256\260\345\275\225''.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check before filter ends with 申请记录.
+Tue Feb 12 13:39:08 CET 2019 Reads filter starts with 申请记录.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 59: NanoFilt: command not found
+cat: ''$'\347\224\263\350\257\267\350\256\260\345\275\225': Is a directory
+mv: cannot move 'filted_'$'\347\224\263\350\257\267\350\256\260\345\275\225' to '../FiltedFiles': Permission denied
+mv: cannot stat 'log_filted_'$'\347\224\263\350\257\267\350\256\260\345\275\225''.log': No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends with 申请记录.
+Tue Feb 12 13:39:08 CET 2019 Reads filter ends.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter with NanoStat starts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 67: cd: 123/Analysis/FiltedFiles: No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with 2018Bewerbung.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_2018Bewerbung.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with 2018Bewerbung.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Analysis.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Analysis.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Analysis.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Android.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Android.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Android.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with AndroidStudioProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_AndroidStudioProjects.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with AndroidStudioProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Arbeistvertrag.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Arbeistvertrag.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Arbeistvertrag.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Desktop.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Desktop.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Desktop.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with DjangoProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_DjangoProjects.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with DjangoProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Documents.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Documents.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Documents.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Downloads.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Downloads.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Downloads.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Dropbox.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Dropbox.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Dropbox.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Japanese.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Japanese.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Japanese.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Mietvertrag.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Mietvertrag.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Mietvertrag.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Music.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Music.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Music.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with NetBeansProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_NetBeansProjects.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with NetBeansProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Pictures.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Pictures.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Pictures.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Public.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Public.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Public.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with PycharmProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_PycharmProjects.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with PycharmProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with RShiny.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_RShiny.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with RShiny.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Templates.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Templates.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Templates.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with Untitled.ipynb.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_Untitled.ipynb.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with Untitled.ipynb.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with WeddingPhotos.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_WeddingPhotos.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with WeddingPhotos.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with WohnungSuchen.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_WohnungSuchen.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with WohnungSuchen.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with anaconda3.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_anaconda3.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with anaconda3.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with bashScripts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_bashScripts.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with bashScripts.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with bin.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_bin.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with bin.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with books.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_books.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with books.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with cProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_cProjects.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with cProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with citra.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_citra.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with citra.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with cmake.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_cmake.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with cmake.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with cmake-3.9.0-Linux-x86_64.sh.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_cmake-3.9.0-Linux-x86_64.sh.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with cmake-3.9.0-Linux-x86_64.sh.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with deja-dup.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_deja-dup.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with deja-dup.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with dw.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_dw.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with dw.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with environments.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_environments.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with environments.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with examples.desktop.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_examples.desktop.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with examples.desktop.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with glassfish-4.1.1.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_glassfish-4.1.1.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with glassfish-4.1.1.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with guppy_workflows.txt.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_guppy_workflows.txt.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with guppy_workflows.txt.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with hp-check.log.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_hp-check.log.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with hp-check.log.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with learn_Linux.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_learn_Linux.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with learn_Linux.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with makefileScripts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_makefileScripts.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with makefileScripts.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with ncct.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_ncct.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with ncct.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with netbeans-8.2.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_netbeans-8.2.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with netbeans-8.2.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with nextflow.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_nextflow.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with nextflow.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with nextflowScripts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_nextflowScripts.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with nextflowScripts.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with node_modules.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_node_modules.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with node_modules.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with nodejsProjects.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_nodejsProjects.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with nodejsProjects.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with nsegata-phylophlan.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_nsegata-phylophlan.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with nsegata-phylophlan.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with package-lock.json.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_package-lock.json.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with package-lock.json.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with papers.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_papers.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with papers.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with pbsScripts.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_pbsScripts.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with pbsScripts.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with probeaufgabe_animus.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_probeaufgabe_animus.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with probeaufgabe_animus.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with snap.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_snap.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with snap.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter starts with 申请记录.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 71: NanoStat: command not found
+mv: cannot move 'stat_'$'\347\224\263\350\257\267\350\256\260\345\275\225''.txt' to '../StatFiles': Permission denied
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends with 申请记录.
+Tue Feb 12 13:39:08 CET 2019 Reads check after filter ends.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 77: cd: 123/Analysis/AdapterTrimmedFiles: No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Generate the summury files.
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 79: 123/Analysis/StatFiles/summary_stat_after_adaptertrimming.txt: No such file or directory
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 80: cd: 123/Analysis/FiltedFiles: No such file or directory
+/var/spool/torque/mom_priv/jobs/19.localhost.SC: line 81: 123/Analysis/StatFiles/summary_stat_after_filter.txt: No such file or directory
+Tue Feb 12 13:39:08 CET 2019 Done.

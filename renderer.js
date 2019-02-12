@@ -13,6 +13,8 @@ const nbSubmitBtn = document.getElementById('nb-startpipeline')
 const checkjobstatusBtn = document.getElementById('checkjobstatus')
 const selectStatFileBtn = document.getElementById('select-stat-file')
 const selectAssembler = document.getElementById('selectAssembler')
+const selectShort1Btn = document.getElementById('select-short1')
+const selectShort2Btn = document.getElementById('select-short2')
 //const checkAlbacore = document.getElementById('basecaller_albacore')
 //const checkGuppy = document.getElementById('basecaller_guppy')
 
@@ -47,6 +49,20 @@ checkjobstatusBtn.addEventListener('click', function (event) {
 selectStatFileBtn.addEventListener('click', function (event) {
   ipc.send('selectstatfile')
 });
+
+selectShort1Btn.addEventListener('click', function (event) {
+  ipc.send('open-selectshort1')
+});
+
+selectShort2Btn.addEventListener('click', function (event) {
+  ipc.send('open-selectshort2')
+});
+
+/*
+selectFlowcell.addEventListener('change', function (event){
+  alert('123');
+})
+*/
 
 selectAssembler.addEventListener('change', function (event) {
   //alert(selectAssembler.options[selectAssembler.selectedIndex].value)
@@ -100,14 +116,16 @@ submitBtn.addEventListener('click', function (event) {
   let jobname = document.getElementById('jobname').value === ''?'':'-N '+document.getElementById('jobname').value;
   let execstr = '';
   if(barcodes===''){
-    execstr = 'qsub '+jobname+' -l ncpus='+ppn+' -v SCORE='+score+',LENGTH='+length+',HEADCROP='+headcrop+',WORKSPACE_PATH='+workspace+' ~/pbsScripts/split_ontb.pbs';
+    execstr = 'qsub '+jobname+' -l ncpus='+ppn+' -v SCORE='+score+',LENGTH='+length+',HEADCROP='+headcrop+',WORKSPACE_PATH='+workspace
+    +' ~/pbsScripts/split_ontb.pbs';
   } else {
     barcodes = barcodes.split(',');
     for(let i=0;i<barcodes.length;i++){
       barcodes[i] = padDigits(barcodes[i],2);
     }
     barcodes = 'barcode{'+barcodes.join()+',}/';
-    execstr = 'qsub '+jobname+' -l ncpus='+ppn+' -v "BARCODENUMBERS=\''+barcodes+'\'",SCORE='+score+',LENGTH='+length+',HEADCROP='+headcrop+',WORKSPACE_PATH='+workspace+' ~/pbsScripts/split_ontb.pbs';
+    execstr = 'qsub '+jobname+' -l ncpus='+ppn+' -v "BARCODENUMBERS=\''+barcodes+'\'",SCORE='+score+',LENGTH='+length+',HEADCROP='+headcrop
+    +',WORKSPACE_PATH='+workspace+' ~/pbsScripts/split_ontb.pbs';
   }
   exec(execstr, function (err, stdout, stderr) {
     if (err) handleError();
@@ -118,9 +136,10 @@ submitBtn.addEventListener('click', function (event) {
 
 // submit the data for not basecalled fast5 files
 nbSubmitBtn.addEventListener('click', function (event) {
+  
   let workspace = document.getElementById('nb-selected-file').value;
-  let flowcellid = document.getElementById('flowcell-id').value;
-  let kitnumber = document.getElementById('kit-number').value;
+  let flowcellid = document.getElementById('selectFlowcell').value;
+  let kitnumber = document.getElementById('selectKitNumber').value;
   let barcodes = document.getElementById('nb-barcodes').value;
   let score = document.getElementById('nb-read-score').value;
   let length = document.getElementById('nb-read-length').value;
@@ -129,6 +148,8 @@ nbSubmitBtn.addEventListener('click', function (event) {
   let jobname = document.getElementById('nb-jobname').value === ''?'':'-N '+document.getElementById('nb-jobname').value;
   let assembler = document.getElementById('selectAssembler');
   let execstr = '';
+  
+  /*
   if(barcodes===''){
     if(document.getElementById('basecaller_albacore').checked){
       execstr = 'qsub '+jobname+' -l ncpus='+ppn+' -v FLOWCELL_ID='+flowcellid+',KIT_NUMBER='+kitnumber
@@ -152,6 +173,7 @@ nbSubmitBtn.addEventListener('click', function (event) {
     console.log(stdout);
     console.log(stderr);
   });
+  */
 });
 
 ipc.on('selected-file', function (event, path) {
@@ -160,6 +182,16 @@ ipc.on('selected-file', function (event, path) {
 
 ipc.on('nb-selected-file', function (event, path) {
   document.getElementById('nb-selected-file').value = path;
+  window.location.hash = '#not-basecalled';
+});
+
+ipc.on('selectedshort1', function (event, path) {
+  document.getElementById('selected-short1').value = path;
+  window.location.hash = '#not-basecalled';
+});
+
+ipc.on('selectedshort2', function (event, path) {
+  document.getElementById('selected-short2').value = path;
   window.location.hash = '#not-basecalled';
 });
 
