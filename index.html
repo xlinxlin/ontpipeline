@@ -24,9 +24,6 @@
         <li class="nav-item">
           <a class="nav-link" id="check-job-status-tab" data-toggle="tab" href="#checkjobs" role="tab" aria-controls="check job status" aria-selected="false">Check Job Status</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" id="check-stats-tab" data-toggle="tab" href="#checkstats" role="tab" aria-controls="check stats" aria-selected="false">(not used)</a>
-        </li>
       </ul>
       <div class="tab-content" id="myTabContent">
         <p></p>
@@ -96,7 +93,6 @@
                   <small id="headcropHelp" class="form-text text-muted">trim n nucleotides from start of read (required), default: 50</small>
                 </div>
               </div>
-              <!--<button id="startpipeline" class="btn btn-primary">Submit</button>-->
               <input type="submit" id="startpipeline" class="btn btn-primary" value="submit">
             </div>
           </form>
@@ -105,89 +101,91 @@
         <p></p>
         <div class="tab-pane fade" id="not-basecalled" role="tabpanel" aria-labelledby="not-basecalled-tab">
           <form id="submitform" action="submittedNotBasecalled.html" method="GET">
-          <!--<form id="submitform" action="" method="GET">-->
             <div class="card">
               <div class="card-header">
                 1. General Settings
               </div>
               <p></p>
               <div class="form-group row">
-                <label for="nb-jobname" class="col-sm-2 col-form-label">Job name</label>
+                <div class="col-sm-2 text-right">
+                  <label for="nb-jobname" class="col-form-label">Job name</label>
+                  <small class="form-text text-muted">(optional)</small>
+                </div>
                 <div class="col-sm-10">
                   <input type="text" class="form-control" id="nb-jobname" name="nb-jobname">
-                  <small id="jobnameHelp" class="form-text text-muted">set the name of the job, up to 15 characters, no blank spaces, start with alphanumeric character (recommended)</small>
+                  <small id="jobnameHelp" class="form-text text-muted">set the name of the job, up to 15 characters, no blank spaces, start with alphanumeric character</small>
                 </div>
               </div>
               <div class="form-group row">
-                <label for="select workspace" class="col-sm-2 col-form-label">Workspace</label>
+                <div class="col-sm-2 text-right">
+                  <label for="select workspace" class="col-form-label">Workspace</label>
+                  <small class="form-text text-muted">(required)</small>
+                </div>
                 <div class="col-sm-10">
                   <div class="input-group">
-                    <input id="nb-selected-file" name="nb-selected-file" class="form-control col-sm-8" value="" required/></input>
-                    <button id="nb-select-file" class="btn btn-primary">Browse</button>
+                    <input id="nb-selected-file" name="nb-selected-file" class="form-control" value="" required/></input>
+                    <button type="button" id="nb-select-file" class="btn btn-primary">Browse</button>
                   </div>
-                  <small id="workspaceHelp" class="form-text text-muted">select path/to/your/workspace/ (required)</small>
+                  <small id="workspaceHelp" class="form-text text-muted">select path/to/your/workspace/</small>
                 </div>
               </div>
-
-              <!--
               <div class="form-group row">
-                <div class="col-2">
-                  <label for="barcodes" class="col-form-label" data-toggle="tooltip" data-placement="right" title="set which barcodes you want to analysis, e.g.: 1,2,3,4">Barcodes</label>
+                <div class="col-sm-2 text-right">
+                  <label for="barcodes" class="col-form-label">Barcodes</label>
+                  <small class="form-text text-muted">(optional)</small>
                 </div>
-                <div class="col-4">
-                  <input type="text" class="form-control" id="nb-barcodes" name="nb-barcodes">
-                </div>
-                <div class="col-2">
-                  <label for="threads" class="col-form-label" data-toggle="tooltip" data-placement="right" title="set how many threads do you need (required)">Threads</label>
-                </div>
-                <div class="col-4">
-                  <input type="number" class="form-control" id="nb-threads" min="1" step="1" value="" required>
-                </div>
-              </div>
-              -->
-
-              <div class="form-group row">
-                <label for="barcodes" class="col-sm-2 col-form-label">Barcodes</label>
                 <div class="col-sm-10">
                   <input type="text" class="form-control" id="nb-barcodes" name="nb-barcodes">
-                  <small id="barcodessHelp" class="form-text text-muted">set whitch barcodes you want to analysis (optional), e.g.: 1,2,3,4, left it blank for all barcodes</small>
+                  <small id="barcodessHelp" class="form-text text-muted">set whitch barcodes you want to analysis, e.g.: 1,2,3,4, left it blank for all barcodes</small>
                 </div>
               </div>
               <div class="form-group row">
-                <label for="threads" class="col-sm-2 col-form-label">Threads</label>
+                <div class="col-sm-2 text-right">
+                  <label for="threads" class="col-form-label">Threads</label>
+                  <small class="form-text text-muted">(required)</small>
+                </div>
                 <div class="col-sm-10">
                   <input type="number" class="form-control" id="nb-threads" name="nb-threads" min="1" step="1" value="" required>
-                  <small id="threadsHelp" class="form-text text-muted">set how many threads do you need (required), default: max threads on your system</small>
+                  <small id="threadsHelp" class="form-text text-muted">set how many threads do you need, default: max threads on your system</small>
                 </div>
               </div>
             </div>
+
             <div class="card">
               <div class="card-header">
                 2. Basecalling Settings
               </div>
               <p></p>
-
               <div class="form-group row">
-                <label for="selectFlowCell" class="col-sm-2 col-form-label">Flowcell ID</label>
+                <div class="col-sm-2 text-right">
+                  <label for="selectFlowCell" class="col-form-label">Flowcell ID</label>
+                  <small class="form-text text-muted">(required)</small>
+                </div>
                 <div class="col-sm-10">
-                  <select class="form-control" id="selectFlowCell" name="selectFlowCell">
-                  </select>
+                  <select class="form-control" id="selectFlowCell" name="selectFlowCell"></select>
+                  <small class="form-text text-muted">select a flowcell ID</small>
                 </div>
               </div>
 
               <div class="form-group row">
-                <label for="selectKitNumber" class="col-sm-2 col-form-label">Kit Number</label>
+                <div class="col-sm-2 text-right">
+                  <label for="selectKitNumber" class="col-form-label">Kit Number</label>
+                  <small class="form-text text-muted">(required)</small>
+                </div>
                 <div class="col-sm-10">
-                  <select class="form-control" id="selectKitNumber" name="selectKitNumber"> 
-                  </select>
+                  <select class="form-control" id="selectKitNumber" name="selectKitNumber"></select>
+                  <small class="form-text text-muted">select a kit number</small>
                 </div>
               </div>
 
               <div class="form-group row">
-                <label for="selectBarcodeKit" class="col-sm-2 col-form-label">Barcode Kit</label>
+                <div class="col-sm-2 text-right">
+                  <label for="selectBarcodeKit" class="col-form-label">Barcode Kit</label>
+                  <small class="form-text text-muted">(optional)</small>
+                </div>
                 <div class="col-sm-10">
-                  <select multiple class="form-control" id="selectBarcodeKit" name="selectBarcodeKit"> 
-                  </select>
+                  <select multiple class="form-control" id="selectBarcodeKit" name="selectBarcodeKit"></select>
+                  <small class="form-text text-muted">select barcode kit(s) if used</small>
                 </div>
               </div>
 
@@ -198,85 +196,87 @@
               </div>
               <p></p>
               <div class="form-group row">
-                <label for="readscore" class="col-sm-2 col-form-label">Read score</label>
+                <div class="col-sm-2 text-right">
+                  <label for="readscore" class="col-form-label">Read score</label>
+                  <small class="form-text text-muted">(required)</small>
+                </div>
                 <div class="col-sm-10">
-                  <input type="number" class="form-control" id="nb-read-score" name="nb-read-score" min="1" step="0.1" value="9" required>
+                  <input type="number" class="form-control" id="nb-read-score" name="nb-read-score" min="0" step="1" value="9" required>
                   <small id="readscoreHelp" class="form-text text-muted">set a minimum average read quality score for filter (required), default: 9</small>
                 </div>
               </div>
               <div class="form-group row">
-                <label for="readlength" class="col-sm-2 col-form-label">Read length</label>
+                <div class="col-sm-2 text-right">
+                  <label for="readlength" class="col-form-label">Read length</label>
+                  <small class="form-text text-muted">(required)</small>
+                </div>
                 <div class="col-sm-10">
                   <input type="number" class="form-control" id="nb-read-length" name="nb-read-length" min="0" step="1" value="500" required>
                   <small id="readlengthHelp" class="form-text text-muted">set a minimum read length for filter (required), default: 500</small>
                 </div>
               </div>
               <div class="form-group row">
-                <label for="headcrop" class="col-sm-2 col-form-label">Head crop</label>
+                <div class="col-sm-2 text-right">
+                  <label for="headcrop" class="col-form-label">Head crop</label>
+                  <small class="form-text text-muted">(required)</small>
+                </div>
                 <div class="col-sm-10">
                   <input type="number" class="form-control" id="nb-headcrop" name="nb-headcrop" min="0" step="1" value="50" required>
                   <small id="headcropHelp" class="form-text text-muted">trim n nucleotides from start of read (required), default: 50</small>
                 </div>
               </div>
-              <!--<button id="nb-startpipeline" class="btn btn-primary">Submit</button>-->
-              <!--<input type="submit" id="nb-startpipeline" class="btn btn-primary" value="submit">-->
             </div>
 
             <div class="card">
               <div class="card-header">
                 4. Assembly Settings
               </div>
-              <!--<button id="nb-startpipeline" class="btn btn-primary">Submit</button>-->
               <p></p>
-
               <div class="form-group row">
-                <label for="selectAssembler" class="col-sm-2 col-form-label">Assembler
-                </label>
+                <div class="col-sm-2 text-right">
+                  <label for="selectAssembler" class="col-form-label">Assembler</label>
+                  <small class="form-text text-muted">(required)</small>
+                </div>
                 <div class="col-sm-10">
                   <select class="form-control" id="selectAssembler" name="selectAssembler">
                     <option>Canu</option>
                     <option>Flye</option>
                     <option selected>Unicycler</option> 
                   </select>
+                  <small class="form-text text-muted">select an assembler</small>
                 </div>
               </div>
 
-              <div id="changecontent">
-
-              
-                <!--<div id="unicycler" style="display:none;">-->
-                  <div class="form-group row">
-                    <label for="select short1" class="col-sm-2 col-form-label">Short 1</label>
-                    <div class="col-sm-10">
-                      <div class="input-group">
-                        <input id="selected-short1" name="selected-short1" class="form-control col-sm-8" value="" /></input>
-                        <button id="select-short1" name="select-short1" class="btn btn-primary">Browse</button>
-                      </div>
+              <div id="changecontent">              
+                <div class="form-group row">
+                  <div class="col-sm-2 text-right">
+                    <label for="select short1" class="col-form-label">Short 1</label>
+                    <small class="form-text text-muted">(optional)</small>
+                  </div>
+                  <div class="col-sm-10">
+                    <div class="input-group">
+                      <input id="selected-short1" name="selected-short1" class="form-control" value="" /></input>
+                      <button type="button" id="select-short1" name="select-short1" class="btn btn-primary">Browse</button>
                     </div>
                   </div>
-
-                  <div class="form-group row">
-                    <label for="select short2" class="col-sm-2 col-form-label">Short 2</label>
-                    <div class="col-sm-10">
-                      <div class="input-group">
-                        <input id="selected-short2" name="selected-short2" class="form-control col-sm-8" value="" /></input>
-                        <button id="select-short2" name="select-short2" class="btn btn-primary">Browse</button>
-                      </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-2 text-right"> 
+                    <label for="select short2" class="col-form-label">Short 2</label>
+                    <small class="form-text text-muted">(optional)</small>
+                  </div>
+                  <div class="col-sm-10">
+                    <div class="input-group">
+                      <input id="selected-short2" name="selected-short2" class="form-control" value="" /></input>
+                      <button type="button" id="select-short2" name="select-short2" class="btn btn-primary">Browse</button>
                     </div>
                   </div>
-                <!--</div>-->
-        
-
+                </div>
               </div>
-            
-
               <input type="submit" id="nb-startpipeline" class="btn btn-primary" value="submit">
             </div>
-
           </form>
         </div>
-
-
 
         <p></p>
         <div class="tab-pane fade" id="checkjobs" role="tabpanel" aria-labelledby="check-job-status-tab">

@@ -63,7 +63,7 @@ ipc.on('nb-open-file-dialog', function (event) {
 
 ipc.on('open-selectshort1', function (event) {
   dialog.showOpenDialog({
-    properties: ['openDirectory']
+    properties: ['openFile']
   }, function (files) {
     if (files) event.sender.send('selectedshort1', files)
   })
@@ -71,7 +71,7 @@ ipc.on('open-selectshort1', function (event) {
 
 ipc.on('open-selectshort2', function (event) {
   dialog.showOpenDialog({
-    properties: ['openDirectory']
+    properties: ['openFile']
   }, function (files) {
     if (files) event.sender.send('selectedshort2', files)
   })

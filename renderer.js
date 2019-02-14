@@ -18,6 +18,15 @@ const selectShort2Btn = document.getElementById('select-short2')
 //const checkAlbacore = document.getElementById('basecaller_albacore')
 //const checkGuppy = document.getElementById('basecaller_guppy')
 
+
+$(document).on('click', '.select-short2', function() {
+  ipc.send('open-selectshort2')
+});
+
+$(document).on('click', '.select-short1', function() {
+  ipc.send('open-selectshort1')
+});
+
 document.addEventListener('DOMContentLoaded', function(event){
   ipc.send('get-threads-number')
 });
@@ -69,7 +78,10 @@ selectAssembler.addEventListener('change', function (event) {
   if (selectAssembler.options[selectAssembler.selectedIndex].value === 'Flye') {
     document.getElementById('changecontent').innerHTML = 
       '<div class="form-group row">'
-      +'<label for="genome-size-flye" class="col-sm-2 col-form-label">Genome Size</label>'
+      +'<div class="col-sm-2 text-right">'
+      +'<label for="genome-size-flye" class="col-form-label">Genome Size</label>'
+      +'<small class="form-text text-muted">(required)</small>'
+      +'</div>'
       +'<div class="col-sm-10">'
       +'<input type="text" class="form-control" id="genome-size-flye" name="genome-size-flye" required>'
       +'</div>'
@@ -77,7 +89,10 @@ selectAssembler.addEventListener('change', function (event) {
   } else if (selectAssembler.options[selectAssembler.selectedIndex].value === 'Canu') {
     document.getElementById('changecontent').innerHTML = 
     '<div class="form-group row">'
-    +'<label for="genome-size-canu" class="col-sm-2 col-form-label">Genome Size</label>'
+    +'<div class="col-sm-2 text-right">'
+    +'<label for="genome-size-canu" class="col-form-label">Genome Size</label>'
+    +'<small class="form-text text-muted">(required)</small>'
+    +'</div>'
     +'<div class="col-sm-10">'
     +'<input type="text" class="form-control" id="genome-size-canu" name="genome-size-canu" required>'
     +'</div>'
@@ -85,20 +100,26 @@ selectAssembler.addEventListener('change', function (event) {
   } else {
     document.getElementById('changecontent').innerHTML = 
       '<div class="form-group row">'
-      +'<label for="select-short1" class="col-sm-2 col-form-label">Short 1</label>'
+      +'<div class="col-sm-2 text-right">'
+      +'<label for="select-short1" class="col-form-label">Short 1</label>'
+      +'<small class="form-text text-muted">(optional)</small>'
+      +'</div>'
       +'<div class="col-sm-10">'
       +'<div class="input-group">'
-      +'<input id="selected-short1" name="selected-short1" class="form-control col-sm-8" value="" /></input>'
-      +'<button id="select-short1" name="select-short1" class="btn btn-primary">Browse</button>'
+      +'<input id="selected-short1" name="selected-short1" class="form-control" value="" /></input>'
+      +'<button id="select-short1" name="select-short1" class="btn btn-primary select-short1">Browse</button>'
       +'</div>'
       +'</div>'
       +'</div>'
       +'<div class="form-group row">'
-      +'<label for="select short2" class="col-sm-2 col-form-label">Short 2</label>'
+      +'<div class="col-sm-2 text-right">'
+      +'<label for="select short2" class="col-form-label">Short 2</label>'
+      +'<small class="form-text text-muted">(optional)</small>'
+      +'</div>'
       +'<div class="col-sm-10">'
       +'<div class="input-group">'
-      +'<input id="selected-short2" name="selected-short2" class="form-control col-sm-8" value="" /></input>'
-      +'<button id="select-short2" name="select-short2" class="btn btn-primary">Browse</button>'
+      +'<input id="selected-short2" name="selected-short2" class="form-control" value="" /></input>'
+      +'<button id="select-short2" name="select-short2" class="btn btn-primary select-short2">Browse</button>'
       +'</div>'
       +'</div>'
       +'</div>'
@@ -201,6 +222,7 @@ ipc.on('jobstatus', function (event, status) {
 });
 
 ipc.on('return-threads-number',function(event, threadsnumber){
+  //alert('hello');
   document.getElementById('threads').value = parseInt(threadsnumber);
   document.getElementById('nb-threads').value = parseInt(threadsnumber);
 })
