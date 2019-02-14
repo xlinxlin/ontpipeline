@@ -35,31 +35,43 @@
               </div>
               <p></p>
               <div class="form-group row">
-                <label for="jobname" class="col-sm-2 col-form-label">Job name</label>
+                <div class="col-sm-2 text-right">
+                  <label for="jobname" class="col-form-label">Job name</label>
+                  <small class="form-text text-muted">(optional)</small>
+                </div>
                 <div class="col-sm-10">
                   <input type="text" class="form-control" id="jobname" name="jobname">
-                  <small id="jobnameHelp" class="form-text text-muted">set the name of the job, up to 15 characters, no blank spaces, start with alphanumeric character (recommended)</small>
+                  <small id="jobnameHelp" class="form-text text-muted">set the name of the job, up to 15 characters, no blank spaces, start with alphanumeric character</small>
                 </div>
               </div>
               <div class="form-group row">
-                <label for="select workspace" class="col-sm-2 col-form-label">Workspace</label>
+                <div class="col-sm-2 text-right">
+                  <label for="select workspace" class="col-form-label">Workspace</label>
+                  <small class="form-text text-muted">(required)</small>
+                </div>
                 <div class="col-sm-10">
                   <div class="input-group">
-                    <input id="selected-file" name="selected-file" class="form-control col-sm-8" value="" required/></input>
+                    <input id="selected-file" name="selected-file" class="form-control" value="" required/></input>
                     <button id="select-file" name="select-file" class="btn btn-primary">Browse</button>
                   </div>
                   <small id="workspaceHelp" class="form-text text-muted">select path/to/your/workspace/ (required)</small>
                 </div>
               </div>
               <div class="form-group row">
-                <label for="barcodes" class="col-sm-2 col-form-label">Barcodes</label>
+                <div class="col-sm-2 text-right">
+                  <label for="barcodes" class="col-form-label">Barcodes</label>
+                  <small class="form-text text-muted">(optional)</small>
+                </div>
                 <div class="col-sm-10">
                   <input type="text" class="form-control" id="barcodes" name="barcodes">
                   <small id="barcodessHelp" class="form-text text-muted">set whitch barcodes you want to analysis, e.g.: 1,2,3,4</small>
                 </div>
               </div>
               <div class="form-group row">
-                <label for="threads" class="col-sm-2 col-form-label">Threads</label>
+                <div class="col-sm-2 text-right">
+                  <label for="threads" class="col-form-label">Threads</label>
+                  <small class="form-text text-muted">(required)</small>
+                </div>
                 <div class="col-sm-10">
                   <input type="number" class="form-control" id="threads" name="threads" min="1" step="1" value="" required>
                   <small id="threadsHelp" class="form-text text-muted">set how many threads do you need (required), default: 4</small>
@@ -73,21 +85,30 @@
               </div>
               <p></p>
               <div class="form-group row">
-                <label for="readscore" class="col-sm-2 col-form-label">Read score</label>
+                <div class="col-sm-2 text-right">
+                  <label for="readscore" class="col-form-label">Read score</label>
+                  <small class="form-text text-muted">(required)</small>
+                </div>
                 <div class="col-sm-10">
-                  <input type="number" class="form-control" id="read-score" name="read-score" min="1" step="0.1" value="9" required>
+                  <input type="number" class="form-control" id="read-score" name="read-score" min="0" step="1" value="9" required>
                   <small id="readscoreHelp" class="form-text text-muted">set a minimum average read quality score for filter (required), default: 10</small>
                 </div>
               </div>
               <div class="form-group row">
-                <label for="readlength" class="col-sm-2 col-form-label">Read length</label>
+                <div class="col-sm-2 text-right">
+                  <label for="readlength" class="col-form-label">Read length</label>
+                  <small class="form-text text-muted">(required)</small>
+                </div>
                 <div class="col-sm-10">
                   <input type="number" class="form-control" id="read-length" name="read-length" min="0" step="1" value="500" required>
                   <small id="readlengthHelp" class="form-text text-muted">set a minimum read length for filter (required), default: 500</small>
                 </div>
               </div>
               <div class="form-group row">
-                <label for="headcrop" class="col-sm-2 col-form-label">Head crop</label>
+                <div class="col-sm-2 text-right">
+                  <label for="headcrop" class="col-form-label">Head crop</label>
+                  <small class="form-text text-muted">(required)</small>
+                </div>
                 <div class="col-sm-10">
                   <input type="number" class="form-control" id="headcrop" name="headcrop" min="0" step="1" value="50" required>
                   <small id="headcropHelp" class="form-text text-muted">trim n nucleotides from start of read (required), default: 50</small>
