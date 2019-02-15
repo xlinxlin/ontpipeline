@@ -1,4 +1,4 @@
-Pipeline for Oxford Nanopore system
+Pipeline for Oxford Nanopore Technologies
 ====
 List of bioinformatics tools
 ----
