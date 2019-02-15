@@ -77,14 +77,6 @@ ipc.on('open-selectshort2', function (event) {
   })
 })
 
-ipc.on('selectstatfile', function (event) {
-  dialog.showOpenDialog({
-    properties: ['openDirectory']
-  }, function (files) {
-    if (files) event.sender.send('selected-stat-file', files)
-  })
-})
-
 ipc.on('checkjobstatus', function (event) {
   exec('qstat', function (err, stdout, stderr) {
     if (err) handleError();

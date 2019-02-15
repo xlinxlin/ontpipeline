@@ -13,7 +13,7 @@ _______________________
 Set the path to the folder where contains the .fast5 files. 
 
 .. note::
-  * **Example:** /home/ynzhou/NCCTData/20181109_1435_20181109_VRE_I/fast5
+  * **Example:** :file:`/home/ynzhou/NCCTData/20181109_1435_20181109_VRE_I/fast5`
 
 Barcodes (Optional)
 ______________________

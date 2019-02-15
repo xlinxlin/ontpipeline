@@ -5,13 +5,12 @@
 //Adding an event listener to an html button which will send open-file-dialog to the main process
 const ipc = require('electron').ipcRenderer
 const exec = require('child_process').exec;
-const fs = require('fs');
+//const fs = require('fs');
 const selectDirBtn = document.getElementById('select-file')
 const submitBtn = document.getElementById('startpipeline')
 const nbSelectDirBtn = document.getElementById('nb-select-file')
 const nbSubmitBtn = document.getElementById('nb-startpipeline')
 const checkjobstatusBtn = document.getElementById('checkjobstatus')
-const selectStatFileBtn = document.getElementById('select-stat-file')
 const selectAssembler = document.getElementById('selectAssembler')
 const selectShort1Btn = document.getElementById('select-short1')
 const selectShort2Btn = document.getElementById('select-short2')
@@ -55,9 +54,6 @@ checkjobstatusBtn.addEventListener('click', function (event) {
   ipc.send('checkjobstatus')
 });
 
-selectStatFileBtn.addEventListener('click', function (event) {
-  ipc.send('selectstatfile')
-});
 
 selectShort1Btn.addEventListener('click', function (event) {
   ipc.send('open-selectshort1')
@@ -93,7 +89,7 @@ selectAssembler.addEventListener('change', function (event) {
     +'<label for="genome-size-canu" class="col-form-label">Genome Size</label>'
     +'<small class="form-text text-muted">(required)</small>'
     +'</div>'
-    +'<div class="col-sm-10">'
+    +'<div class="col-sm-8">'
     +'<input type="text" class="form-control" id="genome-size-canu" name="genome-size-canu" required>'
     +'</div>'
     +'</div>'
@@ -104,7 +100,7 @@ selectAssembler.addEventListener('change', function (event) {
       +'<label for="select-short1" class="col-form-label">Short 1</label>'
       +'<small class="form-text text-muted">(optional)</small>'
       +'</div>'
-      +'<div class="col-sm-10">'
+      +'<div class="col-sm-8">'
       +'<div class="input-group">'
       +'<input id="selected-short1" name="selected-short1" class="form-control" value="" /></input>'
       +'<button id="select-short1" name="select-short1" class="btn btn-primary select-short1">Browse</button>'
@@ -116,7 +112,7 @@ selectAssembler.addEventListener('change', function (event) {
       +'<label for="select short2" class="col-form-label">Short 2</label>'
       +'<small class="form-text text-muted">(optional)</small>'
       +'</div>'
-      +'<div class="col-sm-10">'
+      +'<div class="col-sm-8">'
       +'<div class="input-group">'
       +'<input id="selected-short2" name="selected-short2" class="form-control" value="" /></input>'
       +'<button id="select-short2" name="select-short2" class="btn btn-primary select-short2">Browse</button>'
@@ -267,45 +263,6 @@ ipc.on('return-barcode-kits',function(event, flowcellids){
       sel.appendChild(opt);
     }
   }
-})
-
-ipc.on('selected-stat-file',function(event, path){
-  document.getElementById('stat-file-path').value = path;
-  fs.readdir(document.getElementById('stat-file-path').value,function(err,files){
-    
-    /*
-    for(let i=0;i<files.length;i++){
-      //alert(/barcode\d{1,2}/.exec(files[i]));
-      let match = parseInt(/\d\d/.exec(/barcode\d\d/.exec(files[i])));
-      if(!barcode.includes(match)&&!isNaN(match)){
-        barcode.push(match);
-      }
-    }
-    alert(barcode);
-    */
-    
-    let barcode = [];
-    let arr1 = [];
-    let arr2 = [];
-    for(let i=0;i<files.length;i++){
-      fs.readFile(document.getElementById('stat-file-path').value+'/'+files[i],function(err,data){
-        //alert(/\d.*/.exec(/Mean read quality:.*\d.*/.exec(data)));
-      
-        let match = parseInt(/\d\d/.exec(/barcode\d\d/.exec(files[i])));
-        if(!barcode.includes(match)&&!isNaN(match)){
-          barcode.push(match);
-          arr1.push(/\d.*/.exec(/Mean read quality:.*\d.*/.exec(data)));
-        } else if (barcode.includes(match)){
-          arr2.push(/\d.*/.exec(/Mean read quality:.*\d.*/.exec(data)));
-        } else {
-
-        }
-        
-      });
-    }
- 
-  })
-  
 })
 
 function padDigits(number, digits) {

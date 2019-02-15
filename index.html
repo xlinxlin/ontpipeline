@@ -8,7 +8,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>if (window.module) module = window.module;</script>
-    <title>Nanopore</title>
+    <title>Nanopore Pipeline</title>
   </head>
   <body>
     <p></p>
@@ -39,7 +39,7 @@
                   <label for="jobname" class="col-form-label">Job name</label>
                   <small class="form-text text-muted">(optional)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <input type="text" class="form-control" id="jobname" name="jobname">
                   <small id="jobnameHelp" class="form-text text-muted">set the name of the job, up to 15 characters, no blank spaces, start with alphanumeric character</small>
                 </div>
@@ -49,7 +49,7 @@
                   <label for="select workspace" class="col-form-label">Workspace</label>
                   <small class="form-text text-muted">(required)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <div class="input-group">
                     <input id="selected-file" name="selected-file" class="form-control" value="" required/></input>
                     <button id="select-file" name="select-file" class="btn btn-primary">Browse</button>
@@ -62,7 +62,7 @@
                   <label for="barcodes" class="col-form-label">Barcodes</label>
                   <small class="form-text text-muted">(optional)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <input type="text" class="form-control" id="barcodes" name="barcodes">
                   <small id="barcodessHelp" class="form-text text-muted">set whitch barcodes you want to analysis, e.g.: 1,2,3,4</small>
                 </div>
@@ -72,7 +72,7 @@
                   <label for="threads" class="col-form-label">Threads</label>
                   <small class="form-text text-muted">(required)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <input type="number" class="form-control" id="threads" name="threads" min="1" step="1" value="" required>
                   <small id="threadsHelp" class="form-text text-muted">set how many threads do you need (required), default: 4</small>
                 </div>
@@ -89,7 +89,7 @@
                   <label for="readscore" class="col-form-label">Read score</label>
                   <small class="form-text text-muted">(required)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <input type="number" class="form-control" id="read-score" name="read-score" min="0" step="1" value="9" required>
                   <small id="readscoreHelp" class="form-text text-muted">set a minimum average read quality score for filter (required), default: 10</small>
                 </div>
@@ -99,7 +99,7 @@
                   <label for="readlength" class="col-form-label">Read length</label>
                   <small class="form-text text-muted">(required)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <input type="number" class="form-control" id="read-length" name="read-length" min="0" step="1" value="500" required>
                   <small id="readlengthHelp" class="form-text text-muted">set a minimum read length for filter (required), default: 500</small>
                 </div>
@@ -109,7 +109,7 @@
                   <label for="headcrop" class="col-form-label">Head crop</label>
                   <small class="form-text text-muted">(required)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <input type="number" class="form-control" id="headcrop" name="headcrop" min="0" step="1" value="50" required>
                   <small id="headcropHelp" class="form-text text-muted">trim n nucleotides from start of read (required), default: 50</small>
                 </div>
@@ -132,7 +132,7 @@
                   <label for="nb-jobname" class="col-form-label">Job name</label>
                   <small class="form-text text-muted">(optional)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <input type="text" class="form-control" id="nb-jobname" name="nb-jobname">
                   <small id="jobnameHelp" class="form-text text-muted">set the name of the job, up to 15 characters, no blank spaces, start with alphanumeric character</small>
                 </div>
@@ -142,7 +142,7 @@
                   <label for="select workspace" class="col-form-label">Workspace</label>
                   <small class="form-text text-muted">(required)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <div class="input-group">
                     <input id="nb-selected-file" name="nb-selected-file" class="form-control" value="" required/></input>
                     <button type="button" id="nb-select-file" class="btn btn-primary">Browse</button>
@@ -155,7 +155,7 @@
                   <label for="barcodes" class="col-form-label">Barcodes</label>
                   <small class="form-text text-muted">(optional)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <input type="text" class="form-control" id="nb-barcodes" name="nb-barcodes">
                   <small id="barcodessHelp" class="form-text text-muted">set whitch barcodes you want to analysis, e.g.: 1,2,3,4, left it blank for all barcodes</small>
                 </div>
@@ -165,7 +165,7 @@
                   <label for="threads" class="col-form-label">Threads</label>
                   <small class="form-text text-muted">(required)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <input type="number" class="form-control" id="nb-threads" name="nb-threads" min="1" step="1" value="" required>
                   <small id="threadsHelp" class="form-text text-muted">set how many threads do you need, default: max threads on your system</small>
                 </div>
@@ -182,7 +182,7 @@
                   <label for="selectFlowCell" class="col-form-label">Flowcell ID</label>
                   <small class="form-text text-muted">(required)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <select class="form-control" id="selectFlowCell" name="selectFlowCell"></select>
                   <small class="form-text text-muted">select a flowcell ID</small>
                 </div>
@@ -193,7 +193,7 @@
                   <label for="selectKitNumber" class="col-form-label">Kit Number</label>
                   <small class="form-text text-muted">(required)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <select class="form-control" id="selectKitNumber" name="selectKitNumber"></select>
                   <small class="form-text text-muted">select a kit number</small>
                 </div>
@@ -204,7 +204,7 @@
                   <label for="selectBarcodeKit" class="col-form-label">Barcode Kit</label>
                   <small class="form-text text-muted">(optional)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <select multiple class="form-control" id="selectBarcodeKit" name="selectBarcodeKit"></select>
                   <small class="form-text text-muted">select barcode kit(s) if used</small>
                 </div>
@@ -221,7 +221,7 @@
                   <label for="readscore" class="col-form-label">Read score</label>
                   <small class="form-text text-muted">(required)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <input type="number" class="form-control" id="nb-read-score" name="nb-read-score" min="0" step="1" value="9" required>
                   <small id="readscoreHelp" class="form-text text-muted">set a minimum average read quality score for filter (required), default: 9</small>
                 </div>
@@ -231,7 +231,7 @@
                   <label for="readlength" class="col-form-label">Read length</label>
                   <small class="form-text text-muted">(required)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <input type="number" class="form-control" id="nb-read-length" name="nb-read-length" min="0" step="1" value="500" required>
                   <small id="readlengthHelp" class="form-text text-muted">set a minimum read length for filter (required), default: 500</small>
                 </div>
@@ -241,7 +241,7 @@
                   <label for="headcrop" class="col-form-label">Head crop</label>
                   <small class="form-text text-muted">(required)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <input type="number" class="form-control" id="nb-headcrop" name="nb-headcrop" min="0" step="1" value="50" required>
                   <small id="headcropHelp" class="form-text text-muted">trim n nucleotides from start of read (required), default: 50</small>
                 </div>
@@ -258,7 +258,7 @@
                   <label for="selectAssembler" class="col-form-label">Assembler</label>
                   <small class="form-text text-muted">(required)</small>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <select class="form-control" id="selectAssembler" name="selectAssembler">
                     <option>Canu</option>
                     <option>Flye</option>
@@ -274,7 +274,7 @@
                     <label for="select short1" class="col-form-label">Short 1</label>
                     <small class="form-text text-muted">(optional)</small>
                   </div>
-                  <div class="col-sm-10">
+                  <div class="col-sm-8">
                     <div class="input-group">
                       <input id="selected-short1" name="selected-short1" class="form-control" value="" /></input>
                       <button type="button" id="select-short1" name="select-short1" class="btn btn-primary">Browse</button>
@@ -286,7 +286,7 @@
                     <label for="select short2" class="col-form-label">Short 2</label>
                     <small class="form-text text-muted">(optional)</small>
                   </div>
-                  <div class="col-sm-10">
+                  <div class="col-sm-8">
                     <div class="input-group">
                       <input id="selected-short2" name="selected-short2" class="form-control" value="" /></input>
                       <button type="button" id="select-short2" name="select-short2" class="btn btn-primary">Browse</button>
@@ -308,22 +308,7 @@
             <button id="checkjobstatus" name="checkjobstatus" class="form-control btn btn-primary">check</button>
           </div>
         </div>
-
         <p></p>
-        <div class="tab-pane fade" id="checkstats" role="tabpanel" aria-labelledby="check-stats-tab">
-          test
-          <div class="form-group row">
-            <label for="select workspace" class="col-sm-2 col-form-label">Workspace</label>
-            <div class="col-sm-10">
-              <div class="input-group">
-                <input id="stat-file-path" name="stat-file-path" class="col-sm-8" value="" required/></input>
-                <button id="select-stat-file" name="select-stat-file" class="btn btn-primary">Browse</button>
-              </div>
-              <small id="statfileHelp" class="form-text text-muted">select path/to/your/workspace/Analysis/StatFiles (required)</small>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
 
