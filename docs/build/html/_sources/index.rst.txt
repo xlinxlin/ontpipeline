@@ -9,6 +9,7 @@ Welcome to ontpipeline's documentation!
 .. toctree::
    :maxdepth: 2
 
+   GetStarted.rst
    GeneralSettings.rst
    BasecallingSettings.rst
    ReadsFilterSettings.rst
