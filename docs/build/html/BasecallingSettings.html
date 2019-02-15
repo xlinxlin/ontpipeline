@@ -84,6 +84,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#flowcell-id-required">Flowcell ID (Required)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#kit-number-requied">Kit Number (Requied)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#barcode-kit-optional">Barcode kit (Optional)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cpu-threads-per-caller-1-default">cpu_threads_per_caller  (Default)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#records-per-fastq-2-default">records_per_fastq  (Default)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#recursive-2-default">recursive  (Default)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#enable-trimming-2-default">enable_trimming  (Default)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ReadsFilterSettings.html">Reads Filter Settings</a></li>
@@ -172,6 +176,57 @@
 <li>Choose by press <strong>Ctrl</strong> to select multiple barcode kits.</li>
 </ul>
 </div>
+</div>
+<div class="section" id="cpu-threads-per-caller-1-default">
+<h2>cpu_threads_per_caller <a class="footnote-reference" href="#id5" id="id1">[1]</a> (Default)<a class="headerlink" href="#cpu-threads-per-caller-1-default" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Deafault value: 1.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="records-per-fastq-2-default">
+<h2>records_per_fastq <a class="footnote-reference" href="#id6" id="id2">[2]</a> (Default)<a class="headerlink" href="#records-per-fastq-2-default" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Deafault value: 0.</li>
+<li>Use a single file (per worker, per run id).</li>
+</ul>
+</div>
+</div>
+<div class="section" id="recursive-2-default">
+<h2>recursive <a class="footnote-reference" href="#id6" id="id3">[2]</a> (Default)<a class="headerlink" href="#recursive-2-default" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Deafault value: true.</li>
+<li>Search for input files recursively.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="enable-trimming-2-default">
+<h2>enable_trimming <a class="footnote-reference" href="#id6" id="id4">[2]</a> (Default)<a class="headerlink" href="#enable-trimming-2-default" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Deafault value: on.</li>
+<li>Enable trimming of the adapter from the beginning of the read before basecalling.</li>
+</ul>
+</div>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Guppy v2.3.1 Release <a class="reference external" href="https://community.nanoporetech.com/posts/guppy-2-3-1-release">https://community.nanoporetech.com/posts/guppy-2-3-1-release</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[2]</td><td><em>(<a class="fn-backref" href="#id2">1</a>, <a class="fn-backref" href="#id3">2</a>, <a class="fn-backref" href="#id4">3</a>)</em> How to configure Guppy parameters <a class="reference external" href="https://community.nanoporetech.com/protocols/Guppy-protocol-preRev/v/gpb_2003_v1_revg_14dec2018/how-to-configure-guppy-parameters">https://community.nanoporetech.com/protocols/Guppy-protocol-preRev/v/gpb_2003_v1_revg_14dec2018/how-to-configure-guppy-parameters</a></td></tr>
+</tbody>
+</table>
 </div>
 </div>
 

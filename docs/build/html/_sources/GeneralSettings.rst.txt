@@ -10,7 +10,7 @@ Set the name of your job.
 
 Workspace (Required)
 _______________________
-Set the path to the folder where contains the .fast5 files. 
+Set the path to the folder where contains the .fast5 files+. 
 
 .. note::
   * **Example:** :file:`/home/ynzhou/NCCTData/20181109_1435_20181109_VRE_I/fast5`

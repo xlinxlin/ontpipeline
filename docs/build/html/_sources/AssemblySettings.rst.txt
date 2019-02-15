@@ -10,6 +10,12 @@ Genome Size (Required)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Set the estimated genome size.
 
+assembly-prefix (Default)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+.. note::
+  * Default value: asm.
+  * Set the file name prefix with "asm" of intermediate and output files.
+
 Flye
 ~~~~~~~~
 Genome Size (Required)
@@ -29,3 +35,4 @@ Set the path to the fastq file of second short reads in each pair
 .. note::
   * These two options are required in **hybrid assembly** mode, or leave it blank for **long-read-only assembly** mode.
   * These two fastq files should be obtained from Illumina sequencing.
+
