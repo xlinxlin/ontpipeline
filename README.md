@@ -23,7 +23,7 @@ OS
 
 IDE
 ----
-* Visual 1.31.1 https://code.visualstudio.com/
+* Visual Studio Code 1.31.1 https://code.visualstudio.com/
 
 Others
 ----
