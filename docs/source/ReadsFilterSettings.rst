@@ -25,6 +25,7 @@ _______________________
 
 no_split [1]_ (Default)
 __________________________
+
 .. note::
   * Set value: Split reads when an adapter is found in the middle. 
 

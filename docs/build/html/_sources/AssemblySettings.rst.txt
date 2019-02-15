@@ -10,6 +10,10 @@ Genome Size (Required)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Set the estimated genome size.
 
+.. note::
+  * e.g. 5m or 2.6g, which is used for solid k-mers selection.
+  * The estimate could be rough (e.g. withing 0.5x-2x range) and does not affect the other assembly stages.
+
 assembly-prefix [1]_ (Default)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. note::
@@ -21,6 +25,10 @@ Flye
 Genome Size (Required)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Set the estimated genome size.
+
+.. note::
+  * e.g. 5m or 2.6g, which is used for solid k-mers selection.
+  * The estimate could be rough (e.g. withing 0.5x-2x range) and does not affect the other assembly stages.
 
 Unicycler
 ~~~~~~~~~~~~~
