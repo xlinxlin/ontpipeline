@@ -26,6 +26,6 @@ _______________________
 no_split [1]_ (Default)
 __________________________
 .. note::
-  * Default value: Split reads when an adapter is found in the middle. 
+  * Set value: Split reads when an adapter is found in the middle. 
 
 .. [1] Porechop https://github.com/rrwick/Porechop

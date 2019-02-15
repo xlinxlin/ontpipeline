@@ -10,10 +10,10 @@ Genome Size (Required)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Set the estimated genome size.
 
-assembly-prefix (Default)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+assembly-prefix [1]_ (Default)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. note::
-  * Default value: asm.
+  * Set value: asm.
   * Set the file name prefix with "asm" of intermediate and output files.
 
 Flye
@@ -36,3 +36,4 @@ Set the path to the fastq file of second short reads in each pair
   * These two options are required in **hybrid assembly** mode, or leave it blank for **long-read-only assembly** mode.
   * These two fastq files should be obtained from Illumina sequencing.
 
+.. [1] Canu Tutorial https://canu.readthedocs.io/en/latest/tutorial.html

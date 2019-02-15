@@ -20,24 +20,24 @@ cpu_threads_per_caller [1]_ (Default)
 _____________________________________
 
 .. note::
-  * Deafault value: 1.
+  * Set value: 1.
 
 records_per_fastq [2]_ (Default)
 _________________________________
 .. note::
-  * Deafault value: 0.
+  * select value: 0.
   * Use a single file (per worker, per run id).
 
 recursive [2]_ (Default)
 _________________________
 .. note::
-  * Deafault value: true.
+  * Set value: true.
   * Search for input files recursively.
 
 enable_trimming [2]_ (Default)
 _________________________________
 .. note::
-  * Deafault value: on.
+  * Set value: on.
   * Enable trimming of the adapter from the beginning of the read before basecalling.
 
 
