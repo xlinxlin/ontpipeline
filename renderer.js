@@ -154,18 +154,42 @@ submitBtn.addEventListener('click', function (event) {
 // submit the data for not basecalled fast5 files
 nbSubmitBtn.addEventListener('click', function (event) {
   
-  let workspace = document.getElementById('nb-selected-file').value;
-  let flowcellid = document.getElementById('selectFlowcell').value;
-  let kitnumber = document.getElementById('selectKitNumber').value;
-  let barcodes = document.getElementById('nb-barcodes').value;
-  let score = document.getElementById('nb-read-score').value;
-  let length = document.getElementById('nb-read-length').value;
-  let headcrop = document.getElementById('nb-headcrop').value;
-  let ppn = document.getElementById('nb-threads').value;
-  let jobname = document.getElementById('nb-jobname').value === ''?'':'-N '+document.getElementById('nb-jobname').value;
-  let assembler = document.getElementById('selectAssembler');
+  let workspace = $('nb-selected-file').val();
+  //let workspace = document.getElementById('nb-selected-file').value;
+  let flowcellid = $('#selectFlowCell').val();
+  //let flowcellid = document.getElementById('selectFlowCell').value;
+  let kitnumber = $('#selectKitNumber').val();
+  //let kitnumber = document.getElementById('selectKitNumber').value;
+  let barcodes = $('#nb-barcodes').val();
+  //let barcodes = document.getElementById('nb-barcodes').value;
+  let barcodekit = $('#selectBarcodeKit').val() === ''?'' : '"' + $('#selectBarcodeKit').val().join(' ') + '"';
+  //let score = document.getElementById('nb-read-score').value;
+  let score = $('#nb-read-score').val();
+  //let length = document.getElementById('nb-read-length').value;
+  let length = $('#nb-read-length').val();
+  //let headcrop = document.getElementById('nb-headcrop').value;
+  let headcrop = $('#nb-headcrop').val();
+  //let threads = document.getElementById('nb-threads').value;
+  let threads = $('#nb-threads').val();
+  //let jobname = document.getElementById('nb-jobname').value === ''?'':'-N '+document.getElementById('nb-jobname').value;
+  let jobname = $('#nb-jobname').val() === ''?'' : '-N ' + $('#nb-jobname').val();
+  //let assembler = document.getElementById('selectAssembler');
+  let assembler = $('#selectAssembler').val();
+  if (barcodes !== '') {
+    barcodes = barcodes.split(',');
+    for(let i=0;i<barcodes.length;i++){
+      barcodes[i] = padDigits(barcodes[i],2);
+    }
+    barcodes = 'barcode{'+barcodes.join()+',}/';
+  }
+
   let execstr = '';
   
+  execstr = 'qsub '+jobname+' -l ncpus='+threads+' -v THREADS='+threads+',FLOWCELL_ID='+flowcellid+',KIT_NUMBER='+kitnumber+',BARCODEKIT='+barcodekit
+    +',BARCODENUMBERS='+barcodes+',SCORE='+score+',LENGTH='+length+',HEADCROP='+headcrop+',WORKSPACE_PATH='+workspace+',ASSEMBLER='+assembler
+    +' ~/ncct/pipeline/pipeline/ontpipeline/pbsScripts/ontb_guppy.pbs';
+  //alert(barcodes);
+
   /*
   if(barcodes===''){
     if(document.getElementById('basecaller_albacore').checked){

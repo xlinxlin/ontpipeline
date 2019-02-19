@@ -111,23 +111,23 @@ source deactivate
 if [ "$ASSEMBLER" = "Canu" ]; then
   echo $(date) Assembly with Canu starts.
   source activate canu
-  cat *.fastq > tmp.fastq
-  canu -p asm -d ../Assembly genomeSize=${GENOMESIZE} -nanopore-raw tmp.fastq useGrid=false
-  rm tmp.fastq
+  #cat *.fastq > tmp.fastq
+  #canu -p asm -d ../Assembly genomeSize=${GENOMESIZE} -nanopore-raw tmp.fastq useGrid=false
+  #rm tmp.fastq
   source deactivate
 elif [ "$ASSEMBLER" = "Flye" ]; then
   echo $(date) Assembly with Flye starts.
   source activate flye
-  cat *.fastq > tmp.fastq
-  flye --nano-raw tmp.fastq --out-dir ../Assembly --genome-size ${GENOMESIZE} --threads ${THREADS}
-  rm tmp.fastq
+  #cat *.fastq > tmp.fastq
+  #flye --nano-raw tmp.fastq --out-dir ../Assembly --genome-size ${GENOMESIZE} --threads ${THREADS}
+  #rm tmp.fastq
   source deactivate
 else
   echo $(date) Assembly with Unicycler starts.
   source activate unicycler
-  cat *.fastq > tmp.fastq
-  unicycler -l tmp.fastq -o ../Assembly
-  rm tmp.fastq
+  #cat *.fastq > tmp.fastq
+  #unicycler -l tmp.fastq -o ../Assembly
+  #rm tmp.fastq
   source deactivate
 fi
 echo $(date) Assembly ends.

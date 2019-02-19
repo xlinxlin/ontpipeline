@@ -28,4 +28,5 @@ IDE
 Others
 ----
 * PBS 2.4.16
+* Anaconda https://www.anaconda.com/
 * ReadtheDocs https://readthedocs.org/

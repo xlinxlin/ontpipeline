@@ -14,7 +14,7 @@ Choose the barcode kit(s) from the list if used.
 
 .. note::
   * If no barcode kit was used, leave it blank.
-  * Choose by press **Ctrl** to select multiple barcode kits.
+  * Choose by press :py:mod:`Ctrl` to select multiple barcode kits.
 
 cpu_threads_per_caller [1]_ (Default)
 _____________________________________
@@ -31,14 +31,12 @@ _________________________________
 recursive [2]_ (Default)
 _________________________
 .. note::
-  * Set value: true.
-  * Search for input files recursively.
+  * Set value: search for input files recursively.
 
 enable_trimming [2]_ (Default)
 _________________________________
 .. note::
-  * Set value: on.
-  * Enable trimming of the adapter from the beginning of the read before basecalling.
+  * Set value: enable trimming of the adapter from the beginning of the read before basecalling.
 
 
 .. [1] Guppy v2.3.1 Release https://community.nanoporetech.com/posts/guppy-2-3-1-release
