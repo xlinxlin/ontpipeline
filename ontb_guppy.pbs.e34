@@ -1,0 +1,38 @@
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 9: cd: undefined: No such file or directory
+mkdir: cannot create directory '/home/basecalled': Permission denied
+mkdir: cannot create directory '/home/barcodes': Permission denied
+boost::filesystem::create_directories: Permission denied: "/home/basecalled"
+terminate called after throwing an instance of 'boost::filesystem::filesystem_error'
+  what():  boost::filesystem::create_directories: Permission denied: "/home/barcodes"
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 25: 23909 Aborted                 (core dumped) guppy_barcoder -i $PWD/basecalled/ -s $PWD/barcodes/ -t ${THREADS} -q 0 -r
+mkdir: cannot create directory '/home/Analysis': Permission denied
+mkdir: cannot create directory 'Assembly': Permission denied
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 30: cd: barcodes/: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 47: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 55: log_adaptertrimmed_*_*.fastq.log: Permission denied
+mv: cannot stat 'log_adaptertrimmed_*_*.fastq.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 71: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 75: cd: ../Analysis/AdapterTrimmedFiles: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 79: stat_yan.txt: Permission denied
+mv: cannot stat 'stat_yan.txt': No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 85: filted_yan: Permission denied
+cat: yan: Is a directory
+mv: cannot stat 'filted_yan': No such file or directory
+mv: cannot stat 'log_filted_yan.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 93: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 95: cd: ../FiltedFiles: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 98: stat_yan.txt: Permission denied
+mv: cannot stat 'stat_yan.txt': No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 103: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 104: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 105: cd: ../AdapterTrimmedFiles: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 107: ../StatFiles/summary_stat_after_adaptertrimming.txt: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 108: cd: ../FiltedFiles: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 109: ../StatFiles/summary_stat_after_filter.txt: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 110: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 128: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/34.localhost.SC: line 132: deactivate: No such file or directory

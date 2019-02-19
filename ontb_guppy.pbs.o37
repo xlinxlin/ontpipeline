@@ -1,0 +1,79 @@
+Tue Feb 19 10:53:05 CET 2019 Analysis starts.
+Tue Feb 19 10:53:05 CET 2019 Your workdir is /home/yan/ncct/TestData/fast5_106_sqk-rbk004.
+Tue Feb 19 10:53:05 CET 2019 Basecall starts.
+ONT Guppy basecalling software:
+config file:        /opt/ont/guppy/data/dna_r9.4.1_450bps.cfg
+model file:         /opt/ont/guppy/data/template_r9.4.1_450bps_5mer_raw.jsn
+input path:         /home/yan/ncct/TestData/fast5_106_sqk-rbk004
+save path:          /home/yan/ncct/TestData/basecalled/
+chunk size:         1000
+chunks per runner:  20
+records per file:   0
+num basecallers:    4
+cpu mode:           ON
+threads per caller: 1
+
+Found 1 fast5 files to process.
+Init time: 344 ms
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+Caller time: 1686737 ms, Events: 50859611, kev/s: 30.1527
+Finishing up any open output files.
+Basecalling completed successfully.
+Tue Feb 19 11:21:12 CET 2019 Basecall ends.
+Tue Feb 19 11:21:12 CET 2019 Demultiplexing starts.
+ONT Guppy barcoding software:
+input path:         /home/yan/ncct/TestData/basecalled/
+save path:          /home/yan/ncct/TestData/barcodes/
+arrangement files:  barcode_arrs_pcr12.cfg barcode_arrs_pcr96.cfg barcode_arrs_nb12.cfg barcode_arrs_nb24.cfg barcode_arrs_rbk.cfg barcode_arrs_lwb.cfg barcode_arrs_rlb.cfg barcode_arrs_rab.cfg barcode_arrs_rbk4.cfg barcode_arrs_vmk.cfg barcode_arrs_16s.cfg
+min. score:         60
+
+Found 4 fastq files.
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+Done.
+Tue Feb 19 11:22:02 CET 2019 Demultiplexing ends.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming by using Porechop starts.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming starts with barcode01/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming ends with barcode01/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming starts with barcode02/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming ends with barcode02/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming starts with barcode03/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming ends with barcode03/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming starts with barcode04/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming ends with barcode04/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming starts with barcode05/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming ends with barcode05/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming starts with barcode06/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming ends with barcode06/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming starts with barcode07/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:02 CET 2019 Adapter trimming ends with barcode07/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:03 CET 2019 Adapter trimming starts with barcode08/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:03 CET 2019 Adapter trimming ends with barcode08/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:03 CET 2019 Adapter trimming starts with barcode09/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:03 CET 2019 Adapter trimming ends with barcode09/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:03 CET 2019 Adapter trimming starts with barcode10/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:03 CET 2019 Adapter trimming ends with barcode10/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:03 CET 2019 Adapter trimming starts with barcode11/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:03 CET 2019 Adapter trimming ends with barcode11/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:03 CET 2019 Adapter trimming starts with barcode12/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:03 CET 2019 Adapter trimming ends with barcode12/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:03 CET 2019 Adapter trimming starts with unclassified/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:03 CET 2019 Adapter trimming ends with unclassified/fastq_runid_50a6171cadcfb6b5cb2dae4e75a0ccc05b71e3d8_0.fastq.
+Tue Feb 19 11:22:03 CET 2019 Adapter trimming by using Porechop ends.
+Tue Feb 19 11:22:03 CET 2019 Reads filte with NanoStat and NanoFilt starts.
+Tue Feb 19 11:22:03 CET 2019 Reads check before filter starts with *.
+Tue Feb 19 11:22:03 CET 2019 Reads check before filter ends with *.
+Tue Feb 19 11:22:03 CET 2019 Reads filter starts with *.
+Tue Feb 19 11:22:03 CET 2019 Reads filter ends with *.
+Tue Feb 19 11:22:03 CET 2019 Reads filter ends.
+Tue Feb 19 11:22:03 CET 2019 Reads check after filter with NanoStat starts.
+Tue Feb 19 11:22:03 CET 2019 Reads check after filter ends.
+Tue Feb 19 11:22:03 CET 2019 Generate the summury files.
+Tue Feb 19 11:22:03 CET 2019 Assembly with Unicycler starts.
+Tue Feb 19 11:22:03 CET 2019 Assembly ends.
+Tue Feb 19 11:22:03 CET 2019 Done.

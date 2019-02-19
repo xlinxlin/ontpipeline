@@ -1,0 +1,22 @@
+Tue Feb 19 10:13:56 CET 2019 Analysis starts.
+Tue Feb 19 10:13:56 CET 2019 Your workdir is undefined.
+Tue Feb 19 10:13:56 CET 2019 Basecall starts.
+Tue Feb 19 10:13:56 CET 2019 Basecall ends.
+Tue Feb 19 10:13:56 CET 2019 Demultiplexing starts.
+Tue Feb 19 10:13:56 CET 2019 Demultiplexing ends.
+Tue Feb 19 10:13:56 CET 2019 Adapter trimming by using Porechop starts.
+Tue Feb 19 10:13:56 CET 2019 Adapter trimming starts with */*.fastq.
+Tue Feb 19 10:13:56 CET 2019 Adapter trimming ends with */*.fastq.
+Tue Feb 19 10:13:56 CET 2019 Adapter trimming by using Porechop ends.
+Tue Feb 19 10:13:56 CET 2019 Reads filte with NanoStat and NanoFilt starts.
+Tue Feb 19 10:13:56 CET 2019 Reads check before filter starts with yan.
+Tue Feb 19 10:13:56 CET 2019 Reads check before filter ends with yan.
+Tue Feb 19 10:13:56 CET 2019 Reads filter starts with yan.
+Tue Feb 19 10:13:56 CET 2019 Reads filter ends with yan.
+Tue Feb 19 10:13:56 CET 2019 Reads filter ends.
+Tue Feb 19 10:13:56 CET 2019 Reads check after filter with NanoStat starts.
+Tue Feb 19 10:13:56 CET 2019 Reads check after filter ends.
+Tue Feb 19 10:13:56 CET 2019 Generate the summury files.
+Tue Feb 19 10:13:56 CET 2019 Assembly with Unicycler starts.
+Tue Feb 19 10:13:56 CET 2019 Assembly ends.
+Tue Feb 19 10:13:56 CET 2019 Done.

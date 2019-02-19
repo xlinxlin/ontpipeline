@@ -1,0 +1,31 @@
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 47: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 71: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 85: NanoFilt: command not found
+cat: '*': No such file or directory
+mv: cannot stat 'log_filted_*.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 93: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 103: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 104: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 107: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 109: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 110: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 128: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/37.localhost.SC: line 132: deactivate: No such file or directory

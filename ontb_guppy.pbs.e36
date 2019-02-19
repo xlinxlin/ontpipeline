@@ -1,0 +1,162 @@
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 47: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 55: porechop: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 71: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 75: cd: ../Analysis/AdapterTrimmedFiles: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: barcode01: Is a directory
+mv: cannot stat 'log_filted_barcode01.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: barcode02: Is a directory
+mv: cannot stat 'log_filted_barcode02.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: barcode03: Is a directory
+mv: cannot stat 'log_filted_barcode03.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: barcode04: Is a directory
+mv: cannot stat 'log_filted_barcode04.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: barcode05: Is a directory
+mv: cannot stat 'log_filted_barcode05.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: barcode06: Is a directory
+mv: cannot stat 'log_filted_barcode06.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: barcode07: Is a directory
+mv: cannot stat 'log_filted_barcode07.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: barcode08: Is a directory
+mv: cannot stat 'log_filted_barcode08.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+cat: barcode09: Is a directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+mv: cannot stat 'log_filted_barcode09.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: barcode10: Is a directory
+mv: cannot stat 'log_filted_barcode10.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: barcode11: Is a directory
+mv: cannot stat 'log_filted_barcode11.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: barcode12: Is a directory
+mv: cannot stat 'log_filted_barcode12.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: write error: Broken pipe
+mv: cannot stat 'log_filted_barcoding_summary.txt.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: write error: Broken pipe
+mv: cannot stat 'log_filted_read_processor_log-2019-02-19_10-47-05.log.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 77: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 79: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 81: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 83: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 85: NanoFilt: command not found
+cat: unclassified: Is a directory
+mv: cannot stat 'log_filted_unclassified.log': No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 89: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 93: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 95: cd: ../FiltedFiles: Not a directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 98: NanoStat: command not found
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 103: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 104: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 105: cd: ../AdapterTrimmedFiles: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 107: ../StatFiles/summary_stat_after_adaptertrimming.txt: Not a directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 108: cd: ../FiltedFiles: Not a directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 109: ../StatFiles/summary_stat_after_filter.txt: Not a directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 110: deactivate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 128: activate: No such file or directory
+/var/spool/torque/mom_priv/jobs/36.localhost.SC: line 132: deactivate: No such file or directory

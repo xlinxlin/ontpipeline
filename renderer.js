@@ -154,8 +154,8 @@ submitBtn.addEventListener('click', function (event) {
 // submit the data for not basecalled fast5 files
 nbSubmitBtn.addEventListener('click', function (event) {
   
-  let workspace = $('nb-selected-file').val();
-  //let workspace = document.getElementById('nb-selected-file').value;
+  //let workspace = $('nb-selected-file').val();
+  let workspace = document.getElementById('nb-selected-file').value;
   let flowcellid = $('#selectFlowCell').val();
   //let flowcellid = document.getElementById('selectFlowCell').value;
   let kitnumber = $('#selectKitNumber').val();
@@ -183,9 +183,10 @@ nbSubmitBtn.addEventListener('click', function (event) {
     barcodes = 'barcode{'+barcodes.join()+',}/';
   }
 
-  let execstr = '';
-  
-  execstr = 'qsub '+jobname+' -l ncpus='+threads+' -v THREADS='+threads+',FLOWCELL_ID='+flowcellid+',KIT_NUMBER='+kitnumber+',BARCODEKIT='+barcodekit
+  //let execstr = '';
+  //' -l ncpus='+threads
+  //alert(flowcellid);
+  let execstr = 'qsub '+jobname+' -v THREADS='+threads+',FLOWCELL_ID='+flowcellid+',KIT_NUMBER='+kitnumber+',BARCODEKIT='+barcodekit
     +',BARCODENUMBERS='+barcodes+',SCORE='+score+',LENGTH='+length+',HEADCROP='+headcrop+',WORKSPACE_PATH='+workspace+',ASSEMBLER='+assembler
     +' ~/ncct/pipeline/pipeline/ontpipeline/pbsScripts/ontb_guppy.pbs';
   //alert(barcodes);
@@ -209,12 +210,13 @@ nbSubmitBtn.addEventListener('click', function (event) {
     execstr = 'qsub '+jobname+' -l ncpus='+ppn+' -v "BARCODENUMBERS=\''+barcodes+'\'",FLOWCELL_ID='+flowcellid+',KIT_NUMBER='+kitnumber
     +',SCORE='+score+',LENGTH='+length+',HEADCROP='+headcrop+',WORKSPACE_PATH='+workspace+',ASSEMBLER='+assembler+' ~/pbsScripts/ontb_guppy.pbs';
   }
+  */
   exec(execstr, function (err, stdout, stderr) {
     if (err) handleError();
     console.log(stdout);
     console.log(stderr);
   });
-  */
+  
 });
 
 ipc.on('selected-file', function (event, path) {

@@ -6,6 +6,8 @@ echo $(date) Analysis starts.
 echo $(date) Your workdir is "${WORKSPACE_PATH}".
 
 export PATH=$PBS_O_PATH
+export PATH="/home/yan/anaconda3/bin:$PATH"
+
 cd ${WORKSPACE_PATH}
 cd ..
 mkdir $PWD/basecalled
@@ -25,7 +27,8 @@ else
 fi
 echo $(date) Demultiplexing ends.
 
-mkdir -p $PWD/Analysis/{AdapterTrimmedFiles/,StatFiles/,FiltedFiles/,Logs/, Assembly/}
+
+mkdir -p $PWD/Analysis/{AdapterTrimmedFiles/,StatFiles/,FiltedFiles/,Logs/,Assembly/}
 cd barcodes/
 
 #for filename in */*.fastq; do
