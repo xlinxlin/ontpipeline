@@ -1,5 +1,5 @@
-Q & A
-=====
+FAQ
+===
 What bioinformatics tools are used?
 ___________________________________
 * Guppy v2.3.1 https://community.nanoporetech.com
