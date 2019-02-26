@@ -53,8 +53,7 @@ Canu Installation
 
    conda create -n canu python=3.7
    source activate canu
-   sudo apt-get update -y
-   sudo apt-get install -y canu
+   conda install -c bioconda canu
    source deactivate
 
 Flye Installation
