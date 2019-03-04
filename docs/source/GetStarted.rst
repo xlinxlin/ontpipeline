@@ -69,7 +69,7 @@ Unicycler Installation
 ^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: bash
    
-   conda create -n unicycler python=3.5
+   conda create -n unicycler python=3.7
    git clone https://github.com/rrwick/Unicycler.git
    cd Unicycler
    source activate unicycler
