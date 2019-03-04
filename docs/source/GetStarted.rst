@@ -4,7 +4,7 @@ Installation
 _______________________________
 Anaconda Installation
 ^^^^^^^^^^^^^^^^^^^^^
-How To Install the Anaconda Python Distribution on Ubuntu 16.04 https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-16-04
+Installing on Linux https://docs.anaconda.com/anaconda/install/linux/
 
 Guppy Installation
 ^^^^^^^^^^^^^^^^^^
