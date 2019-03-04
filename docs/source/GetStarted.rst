@@ -78,35 +78,11 @@ Unicycler Installation
 
 Dependencies Installation: SPAdes
 """""""""""""""""""""""""""""""""
-1. Download SPAdes Linux binaries and extract them.
-
 .. code-block:: bash
-
-   wget http://cab.spbu.ru/files/release3.13.0/SPAdes-3.13.0-Linux.tar.gz
-   tar -xzf SPAdes-3.13.0-Linux.tar.gz
-
-2. Change to your home directory.
-
-.. code-block:: bash
-  
-  cd $HOME
-
-
-3. Open the .bashrc file.
    
-.. code-block:: bash
-
-  gedit ./bashrc
-
-4. Add the following line to the file, then save the file and exit.
-
-  ``export PATH=/path/to/your/SPAdes/installation/path/bin:$PATH``
-
-5. Use the source command to force Linux to reload the .bashrc file which normally is read only when you log in each time.
-
-.. code-block:: bash
-
-  source .bashrc
+   source activate unicycler
+   conda install -c bioconda spades
+   source deactivate
 
 Dependencies Installation: bowtie2
 """"""""""""""""""""""""""""""""""
