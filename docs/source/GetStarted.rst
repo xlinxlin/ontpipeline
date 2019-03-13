@@ -25,7 +25,7 @@ Porechop Installation
    /opt/anaconda3/bin/conda create -n porechop python=3.7
    source activate /opt/anaconda3/envs/porechop
    /opt/anaconda3/bin/conda install -c bioconda porechop
-   source deactivate
+   source /opt/anaconda3/bin/deactivate
 
 NanoStat Installation
 ^^^^^^^^^^^^^^^^^^^^^
@@ -34,7 +34,7 @@ NanoStat Installation
    /opt/anaconda3/bin/conda create -n nanostat python=3.7
    source activate /opt/anaconda3/envs/nanostat
    /opt/anaconda3/bin/conda install -c bioconda nanostat
-   source deactivate
+   source /opt/anaconda3/bin/deactivate
 
 NanoFilt Installation
 ^^^^^^^^^^^^^^^^^^^^^
@@ -43,7 +43,7 @@ NanoFilt Installation
    /opt/anaconda3/bin/conda create -n nanofilt python=3.7
    source activate /opt/anaconda3/envs/nanofilt
    /opt/anaconda3/bin/conda install -c bioconda nanofilt
-   source deactivate
+   source /opt/anaconda3/bin/deactivate
 
 Canu Installation
 ^^^^^^^^^^^^^^^^^
@@ -52,7 +52,7 @@ Canu Installation
    /opt/anaconda3/bin/conda create -n canu python=3.7
    source activate /opt/anaconda3/envs/canu
    /opt/anaconda3/bin/conda install -c bioconda canu
-   source deactivate
+   source /opt/anaconda3/bin/deactivate
 
 Flye Installation
 ^^^^^^^^^^^^^^^^^
@@ -61,7 +61,7 @@ Flye Installation
    /opt/anaconda3/bin/conda create -n flye python=2.7
    source activate /opt/anaconda3/envs/flye
    /opt/anaconda3/bin/conda install -c bioconda flye
-   source deactivate
+   source /opt/anaconda3/bin/deactivate
 
 Unicycler Installation
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -70,4 +70,4 @@ Unicycler Installation
    /opt/anaconda3/bin/conda create -n unicycler python=3.7
    source activate /opt/anaconda3/envs/unicylcer
    /opt/anaconda3/bin/conda install -c bioconda unicycler
-   source deactivate
+   source /opt/anaconda3/bin/deactivate
