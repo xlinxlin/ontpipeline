@@ -21,97 +21,53 @@ Guppy Installation
 Porechop Installation
 ^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: bash
-
-   conda create -n porechop python=3.7
-   git clone https://github.com/rrwick/Porechop.git
-   cd Porechop
-   source activate porechop
-   python3 setup.py install
+   
+   /opt/anaconda3/bin/conda create -n porechop python=3.7
+   source activate /opt/anaconda3/envs/porechop
+   /opt/anaconda3/bin/conda install -c bioconda porechop
    source deactivate
 
 NanoStat Installation
 ^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: bash
 
-   conda create -n nanostat python=3.7
-   source activate nanostat
-   conda install -c bioconda nanostat
+   /opt/anaconda3/bin/conda create -n nanostat python=3.7
+   source activate /opt/anaconda3/envs/nanostat
+   /opt/anaconda3/bin/conda install -c bioconda nanostat
    source deactivate
 
 NanoFilt Installation
 ^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: bash
 
-   conda create -n nanofilt python=3.7
-   source activate nanofilt
-   conda install -c bioconda nanofilt
+   /opt/anaconda3/bin/conda create -n nanofilt python=3.7
+   source activate /opt/anaconda3/envs/nanofilt
+   /opt/anaconda3/bin/conda install -c bioconda nanofilt
    source deactivate
 
 Canu Installation
 ^^^^^^^^^^^^^^^^^
 .. code-block:: bash
 
-   conda create -n canu python=3.7
-   source activate canu
-   conda install -c bioconda canu
+   /opt/anaconda3/bin/conda create -n canu python=3.7
+   source activate /opt/anaconda3/envs/canu
+   /opt/anaconda3/bin/conda install -c bioconda canu
    source deactivate
 
 Flye Installation
 ^^^^^^^^^^^^^^^^^
 .. code-block:: bash
 
-   conda create -n flye python=2.7
-   source activate flye
-   conda install -c bioconda flye
+   /opt/anaconda3/bin/conda create -n flye python=2.7
+   source activate /opt/anaconda3/envs/flye
+   /opt/anaconda3/bin/conda install -c bioconda flye
    source deactivate
 
 Unicycler Installation
 ^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: bash
    
-   conda create -n unicycler python=3.7
-   git clone https://github.com/rrwick/Unicycler.git
-   cd Unicycler
-   source activate unicycler
-   python3 setup.py install
-   source deactivate
-
-Dependencies Installation: SPAdes
-"""""""""""""""""""""""""""""""""
-.. code-block:: bash
-   
-   source activate unicycler
-   conda install -c bioconda spades
-   source deactivate
-
-Dependencies Installation: bowtie2
-""""""""""""""""""""""""""""""""""
-.. code-block:: bash
-   
-   source activate unicycler
-   conda install -c bioconda bowtie2
-   source deactivate
-
-Dependencies Installation: samtools
-"""""""""""""""""""""""""""""""""""
-.. code-block:: bash
-   
-   source activate unicycler
-   conda install -c bioconda samtools
-   source deactivate
-
-Dependencies Installation: pilon
-""""""""""""""""""""""""""""""""
-.. code-block:: bash
-   
-   source activate unicycler
-   conda install -c bioconda pilon
-   source deactivate
-
-Dependencies Installation: racon
-""""""""""""""""""""""""""""""""
-.. code-block:: bash
-   
-   source activate unicycler
-   conda install -c bioconda racon
+   /opt/anaconda3/bin/conda create -n unicycler python=3.7
+   source activate /opt/anaconda3/envs/unicylcer
+   /opt/anaconda3/bin/conda install -c bioconda unicycler
    source deactivate
