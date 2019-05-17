@@ -1,3 +1,6 @@
+This project is stopped and has been moved to ontpipeline2: https://github.com/xlinxlin/ontpipeline2
+
+
 Pipeline for Oxford Nanopore Technologies
 ====
 List of bioinformatics tools
